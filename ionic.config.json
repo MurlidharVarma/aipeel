@@ -1,0 +1,7 @@
+{
+  "name": "aipeel",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
