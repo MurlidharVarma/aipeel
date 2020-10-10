@@ -14,21 +14,31 @@ export class AppService {
   getHomeData():Observable<any>{
     const products = [
       {
+        id: "1",
         name: "Potatoes",
+        desc: "Fresh Russel potatoes straight from farm",
         price: 30,
-        unit: "per kg",
+        unit: "kg",
         image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
       },
       {
+        id: "2",
         name: "Tomatoes",
+        desc: "Keeping you close to nature with these beautiful organic tomatoes",
         price: 35,
-        unit: "per kg",
+        unit: "kg",
         image: "https://images.unsplash.com/photo-1524593166156-312f362cada0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
+        qty:{
+          increment: 0.5,
+          initialQty: 0
+        }
       },
       {
+        id: "3",
         name: "Onions",
+        desc: "Red Onions: Add that flavour to your food",
         price: 50,
-        unit: "per kg",
+        unit: "kg",
         image: "https://images.unsplash.com/photo-1508747703725-719777637510?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80",
       }
     ]

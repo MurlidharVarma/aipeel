@@ -1,0 +1,35 @@
+.row-flow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center-flow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qty-container{
+    border: 1px solid var(--ion-color-primary);
+    border-radius: 4px;
+    width: 120px;
+}
+
+.btn{
+    @extend .center-flow;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.left-btn{
+    @extend .btn;
+    border-right: 1px solid var(--ion-color-primary);
+}
+
+.right-btn{
+    @extend .btn;
+    border-left: 1px solid var(--ion-color-primary);
+}

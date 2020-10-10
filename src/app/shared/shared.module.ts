@@ -5,6 +5,9 @@ import { ItemHorizontalListingComponent } from './components/item-horizontal-lis
 import { CartItemCardComponent } from './components/cart-item-card/cart-item-card.component';
 import { CategoryItemComponent } from './components/category-item/category-item.component';
 import { CategoryItemListingComponent } from './components/category-item-listing/category-item-listing.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
+import { ItemQuantityComponent } from './components/item-quantity/item-quantity.component';
+import { CONFIG, CONFIG_OBJ } from '../config';
 
 
 
@@ -14,7 +17,9 @@ import { CategoryItemListingComponent } from './components/category-item-listing
     ItemHorizontalListingComponent,
     CategoryItemComponent,
     CategoryItemListingComponent,
-    CartItemCardComponent
+    CartItemCardComponent,
+    ItemDetailComponent,
+    ItemQuantityComponent
   ],
   imports: [
     CommonModule
@@ -24,7 +29,9 @@ import { CategoryItemListingComponent } from './components/category-item-listing
     ItemHorizontalListingComponent,
     CategoryItemComponent,
     CategoryItemListingComponent,
-    CartItemCardComponent
-  ]
+    CartItemCardComponent,
+    ItemDetailComponent,
+    ItemQuantityComponent
+  ],
 })
 export class SharedModule { }

@@ -1,0 +1,9 @@
+<div class="qty-container row-flow">
+  <span class="left-btn" (click)="remove()">
+    <ion-icon [ios]="'remove-outline'" [md]="'remove-sharp'" color="primary"></ion-icon>
+  </span>
+  <ion-label class="qty-text">{{qty | number : '1.1-1'}}</ion-label>
+  <span class="right-btn" (click)="add()">
+    <ion-icon [ios]="'add-outline'" [md]="'add-sharp'" color="primary"></ion-icon>
+  </span>
+</div>

@@ -1,6 +1,7 @@
 import { Route } from '@angular/compiler/src/core';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { CONFIG_OBJ } from '../config';
 
 @Component({
   selector: 'app-folder',
@@ -10,14 +11,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class FolderPage implements OnInit {
   public folder: string;
 
-  private PAGE_TITLE = {
-    '/folder/home': "Home"
-  }
-
   constructor(private router: Router) { }
 
   ngOnInit() {
-    this.folder = this.PAGE_TITLE[this.router.url];
+    this.folder = CONFIG_OBJ.appName
   }
 
 }

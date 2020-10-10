@@ -1,0 +1,35 @@
+.row-flow{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.qty-container{
+    padding-top: 20px;
+}
+
+.unit{
+    margin-left: 5px;
+    font-size: 0.9rem;
+    color: var(--ion-color-info);
+}
+
+.item-image{
+    background-color: pink;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.price{
+    margin: 10px 0px;
+    font-size: 0.9rem;
+    color: var(--ion-color-info);
+}
+
+.totalPrice{
+    height: 50px;
+    font-size: 1rem;
+    color: var(--ion-color-primary);
+}

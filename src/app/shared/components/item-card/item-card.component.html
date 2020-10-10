@@ -1,10 +1,10 @@
-<ion-card class="card-style">
+<ion-card class="card-style" (click)="navigateToDetails()">
   <div class="image-style" [style.backgroundImage]="'url('+item.image+')'"></div>
 
   <ion-card-content class="content-style">
     <div class="main-content-style">
       <div class="header">{{item.name}}</div>
-      <div class="price">Rs. {{item.price}} {{item.unit}}</div>
+      <div *ngIf="item.price" class="price">{{item.price | currency}} per {{item.unit? item.unit: 'unit'}}</div>
     </div>
   </ion-card-content>
     
