@@ -8,6 +8,7 @@ import { CategoryItemListingComponent } from './components/category-item-listing
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 import { ItemQuantityComponent } from './components/item-quantity/item-quantity.component';
 import { CONFIG, CONFIG_OBJ } from '../config';
+import { CategoryItemDetailComponent } from './components/category-item-detail/category-item-detail.component';
 
 
 
@@ -19,7 +20,8 @@ import { CONFIG, CONFIG_OBJ } from '../config';
     CategoryItemListingComponent,
     CartItemCardComponent,
     ItemDetailComponent,
-    ItemQuantityComponent
+    ItemQuantityComponent,
+    CategoryItemDetailComponent
   ],
   imports: [
     CommonModule
@@ -31,7 +33,8 @@ import { CONFIG, CONFIG_OBJ } from '../config';
     CategoryItemListingComponent,
     CartItemCardComponent,
     ItemDetailComponent,
-    ItemQuantityComponent
+    ItemQuantityComponent,
+    CategoryItemDetailComponent
   ],
 })
 export class SharedModule { }

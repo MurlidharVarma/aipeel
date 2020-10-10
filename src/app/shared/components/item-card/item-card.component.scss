@@ -23,16 +23,16 @@
 .main-content-style{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
-    flex-wrap: wrap;
 }
 .header{
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    font-weight: 400;
     color: var(--ion-color-primary);
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+    // overflow: hidden;
 }
 
 .price{
