@@ -28,6 +28,10 @@ export class AppComponent implements OnInit {
       icon: 'cart'
     },
     {
+      title: 'My Cart',
+      url: '/folder/cart',
+      icon: 'list'
+    },    {
       title: 'Contact Us',
       url: '/folder/Archived',
       icon: 'call'
