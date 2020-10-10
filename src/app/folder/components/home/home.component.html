@@ -1,2 +1,3 @@
-<app-item-horizontal-listing [items]="topProducts"></app-item-horizontal-listing>
-<app-item-horizontal-listing [items]="dealProducts"></app-item-horizontal-listing>
+<ng-container *ngFor="let itemList of homeItemList">
+  <app-item-horizontal-listing [items]="itemList"></app-item-horizontal-listing>
+</ng-container>
