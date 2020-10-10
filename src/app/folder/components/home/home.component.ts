@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Category } from 'src/app/shared/models/category.model';
 import { ItemList } from 'src/app/shared/models/item-listing.model';
 import { Item } from '../../../shared/models/item.model';
 import { AppService } from '../../app.service';
@@ -10,16 +11,37 @@ import { AppService } from '../../app.service';
 })
 export class HomeComponent implements OnInit {
 
-  homeData: any;
+  categoryList:{sectionName: string, categories: Category[]};
+  topProducts: ItemList;
+  dealProducts: ItemList;
 
   constructor(private appService: AppService) {
+    this.appService.getDealItems().subscribe((dealProducts:Item[]) => {
+      console.log("DEAL",dealProducts)
+      this.dealProducts = {
+        sectionName: "Deal of the Day",
+        items: dealProducts
+      };
+    });
 
+    this.appService.getPopularItems().subscribe((topProducts:Item[]) => {
+      console.log("TOP",topProducts)
+      this.topProducts = {
+        sectionName: "Top Products",
+        items: topProducts
+      }
+    });
+
+    this.appService.getAllCategories().subscribe(data => {
+      this.categoryList = {
+          sectionName: "Shop by Category",
+          categories: data
+        }
+    });
   }
 
   ngOnInit() {
-    this.appService.getHomeData().subscribe(data => {
-      this.homeData = data;
-    })
+
   }
 
 }
