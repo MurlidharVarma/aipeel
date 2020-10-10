@@ -1,3 +1,4 @@
-<ng-container *ngFor="let itemList of homeItemList">
+<ng-container *ngFor="let itemList of homeData.itemList">
   <app-item-horizontal-listing [items]="itemList"></app-item-horizontal-listing>
 </ng-container>
+<app-category-item-listing [categories]="homeData.categoryList"></app-category-item-listing>

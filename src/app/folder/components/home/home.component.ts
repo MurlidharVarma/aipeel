@@ -10,7 +10,7 @@ import { AppService } from '../../app.service';
 })
 export class HomeComponent implements OnInit {
 
-  homeItemList: ItemList[];
+  homeData: any;
 
   constructor(private appService: AppService) {
 
@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.appService.getHomeData().subscribe(data => {
-      this.homeItemList = data;
+      this.homeData = data;
     })
   }
 
