@@ -1,0 +1,8 @@
+<ion-text color="primary">
+  <h2>{{itemList.sectionName}}</h2>
+</ion-text>
+<ion-segment scrollable="true" class="segment-container">
+  <ng-container *ngFor="let item of itemList.items">
+      <app-item-card [item]="item"></app-item-card>
+  </ng-container>
+</ion-segment>

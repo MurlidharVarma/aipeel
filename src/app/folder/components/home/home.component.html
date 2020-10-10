@@ -1,5 +1,2 @@
-<ion-segment scrollable="true" class="segment-container">
-    <ng-container *ngFor="let item of products">
-        <app-item-card [item]="item"></app-item-card>
-    </ng-container>
-</ion-segment>
+<app-item-horizontal-listing [items]="topProducts"></app-item-horizontal-listing>
+<app-item-horizontal-listing [items]="dealProducts"></app-item-horizontal-listing>

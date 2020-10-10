@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Item } from '../../models/item.model';
+import { ItemList } from 'src/app/shared/models/item-listing.model';
+import { Item } from '../../../shared/models/item.model';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +9,11 @@ import { Item } from '../../models/item.model';
 })
 export class HomeComponent implements OnInit {
 
-  products: Item[];
+  topProducts: ItemList;
+  dealProducts: ItemList;
+
   constructor() {
-    this.products = [
+    const products = [
       {
         name: "Potatoes",
         price: 30,
@@ -30,6 +33,17 @@ export class HomeComponent implements OnInit {
         image: "https://images.unsplash.com/photo-1508747703725-719777637510?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80",
       }
     ]
+
+    this.topProducts = {
+      sectionName: "Top Products",
+      items: products
+    }
+
+    this.dealProducts = {
+      sectionName: "Deal of the Day",
+      items: products
+    }
+
   }
 
   ngOnInit() {}
