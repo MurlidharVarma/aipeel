@@ -17,7 +17,6 @@ export class HomeComponent implements OnInit {
 
   constructor(private appService: AppService) {
     this.appService.getDealItems().subscribe((dealProducts:Item[]) => {
-      console.log("DEAL",dealProducts)
       this.dealProducts = {
         sectionName: "Deal of the Day",
         items: dealProducts
@@ -25,7 +24,6 @@ export class HomeComponent implements OnInit {
     });
 
     this.appService.getPopularItems().subscribe((topProducts:Item[]) => {
-      console.log("TOP",topProducts)
       this.topProducts = {
         sectionName: "Top Products",
         items: topProducts

@@ -7,8 +7,9 @@ import { CategoryItemComponent } from './components/category-item/category-item.
 import { CategoryItemListingComponent } from './components/category-item-listing/category-item-listing.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 import { ItemQuantityComponent } from './components/item-quantity/item-quantity.component';
-import { CONFIG, CONFIG_OBJ } from '../config';
 import { CategoryItemDetailComponent } from './components/category-item-detail/category-item-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ItemCardAddComponent } from './components/item-card-add/item-card-add.component';
 
 
 
@@ -21,10 +22,12 @@ import { CategoryItemDetailComponent } from './components/category-item-detail/c
     CartItemCardComponent,
     ItemDetailComponent,
     ItemQuantityComponent,
-    CategoryItemDetailComponent
+    CategoryItemDetailComponent,
+    ItemCardAddComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ],
   exports:[
     ItemCardComponent, 
@@ -34,7 +37,8 @@ import { CategoryItemDetailComponent } from './components/category-item-detail/c
     CartItemCardComponent,
     ItemDetailComponent,
     ItemQuantityComponent,
-    CategoryItemDetailComponent
+    CategoryItemDetailComponent,
+    ItemCardAddComponent
   ],
 })
 export class SharedModule { }

@@ -2,7 +2,7 @@
     {
        "id": "1",
        "categoryId": "1",
-       "tags":["popular"],
+       "tags":[],
        "name": "Potatoes",
        "desc": "Fresh Russel potatoes straight from farm",
        "price": 30,
@@ -12,7 +12,7 @@
     {
        "id": "2",
        "categoryId": "1",
-       "tags":["popular", "deal"],
+       "tags":["deal"],
        "name": "Tomatoes",
        "desc": "Keeping you close to nature with these beautiful organic tomatoes",
        "price": 350,
@@ -35,12 +35,159 @@
     },
     {
         "id": "4",
-        "tags":["popular", "deal"],
+        "tags":["popular"],
         "categoryId": "1", 
         "name": "Bell Peppers",
         "desc": "Green, Red and Yellow Bell Peppers are delight to eyes and taste",
         "price": 150,
         "unit": "unit",
         "image": "https://images.unsplash.com/photo-1540994587294-487f2ffe18f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1653&q=80"
-     }
+     },
+     {
+         "id": "5",
+         "tags":["deal"],
+         "categoryId": "2", 
+         "name": "Strawberries",
+         "desc": "Strawberries are delight to eyes and taste",
+         "price": 250,
+         "unit": "kg",
+         "image": "https://images.unsplash.com/photo-1518635017498-87f514b751ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80"
+      },
+      {
+         "id": "6",
+         "tags":[],
+         "categoryId": "2", 
+         "name": "Mango",
+         "desc": "Tasty Alphonso Mangoes from Ratnagiri",
+         "price": 700,
+         "unit": "dozen",
+         "image": "https://images.unsplash.com/photo-1519096845289-95806ee03a1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+      },
+      {
+         "id": "7",
+         "tags":["popular"],
+         "categoryId": "2", 
+         "name": "Pineapple",
+         "desc": "Small sized imported pineapple",
+         "price": 150,
+         "unit": "unit",
+         "image": "https://images.unsplash.com/photo-1589820296156-2454bb8a6ad1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+      },
+      {
+         "id": "8",
+         "tags":[],
+         "categoryId": "2", 
+         "name": "Banana",
+         "desc": "Healty breakfast. Boost energy levels.",
+         "price": 30,
+         "unit": "dozen",
+         "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80"
+      },
+      {
+         "id": "9",
+         "tags":[],
+         "categoryId": "3", 
+         "name": "Potato Chips",
+         "desc": "Crunchy and taste",
+         "price": 30,
+         "unit": "unit",
+         "image": "https://images.unsplash.com/photo-1534882406436-6b6b0152efae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+      },
+      {
+         "id": "10",
+         "tags":["deal"],
+         "categoryId": "3", 
+         "name": "Bread",
+         "desc": "Homemade whole wheat bread",
+         "price": 100,
+         "unit": "unit",
+         "image": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+      },
+      {
+         "id": "11",
+         "tags":["popular"],
+         "categoryId": "3", 
+         "name": "Cookies",
+         "desc": "Choco chip cookies makes a great snacks",
+         "price": 40,
+         "unit": "gm",
+         "qty":{
+            "increment": 100,
+            "initialQty": 0
+         },
+         "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80"
+      },
+      {
+         "id": "12",
+         "tags":[],
+         "categoryId": "3", 
+         "name": "Cupcakes",
+         "desc": "Indulge into the fine taste of Choco Chip Cupcakes. Comes with 3 cupcakes per packet.",
+         "price": 250,
+         "unit": "packet",
+         "image": "https://images.unsplash.com/photo-1586985290301-8db40143d525?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+      },
+      {
+         "id": "13",
+         "tags":[],
+         "categoryId": "4", 
+         "name": "Turmeric",
+         "desc": "Freshly grounded Turmeric",
+         "price": 50,
+         "unit": "box",
+         "image": "https://images.unsplash.com/photo-1504387828636-abeb50778c0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
+      },
+      {
+         "id": "14",
+         "tags":["popular"],
+         "categoryId": "4", 
+         "name": "Garam Masala",
+         "desc": "Add great flavors to your dishes",
+         "price": 80,
+         "unit": "box",
+         "image": "https://images.unsplash.com/photo-1543376798-286a59d5da12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2855&q=80"
+      },
+      {
+         "id": "15",
+         "tags":[],
+         "categoryId": "4", 
+         "name": "Chilli Powder",
+         "desc": "Kashmiri red chilli powder",
+         "price": 65,
+         "unit": "box",
+         "image": "https://images.unsplash.com/photo-1539283232661-def4e72f21f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
+      },
+      {
+         "id": "16",
+         "tags":["deal"],
+         "categoryId": "4", 
+         "name": "Coriander Seed",
+         "desc": "Add flavour to your Indian curry",
+         "price": 30,
+         "unit": "gm",
+         "qty":{
+            "increment": 100
+         },
+         "image": "https://images.unsplash.com/photo-1588594907301-823478af8be5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80"
+      },
+      {
+         "id": "17",
+         "tags":["popular"],
+         "categoryId": "5", 
+         "name": "Wheat",
+         "desc": "Sabarmati premium wheat grains.",
+         "price": 120,
+         "unit": "kg",
+         "image": "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1580&q=80"
+      },
+      {
+         "id": "18",
+         "tags":["deal"],
+         "categoryId": "5", 
+         "name": "Rice",
+         "desc": "Long grained basmati rice. Good for cooking tasty Biriyani",
+         "price": 150,
+         "unit": "kg",
+         "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+      }
  ]

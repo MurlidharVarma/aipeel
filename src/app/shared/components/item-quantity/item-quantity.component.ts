@@ -23,12 +23,9 @@ export class ItemQuantityComponent implements OnInit {
     this.qty = 0.0;
     this.initialQty=0;
     this.increment=1;
-    console.log(this.initialQty)
   }
 
   ngOnInit() {
-    console.log(this.initialQty)
-
     this.qty = this.initialQty?this.initialQty:0;
     this.increment = this.increment?this.increment:1;
   }

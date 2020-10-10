@@ -24,7 +24,6 @@ export class ItemDetailComponent implements OnInit {
 
   ngOnInit() {
     this.item = history.state;
-    console.log(this.item)
   }
 
   goBack(){

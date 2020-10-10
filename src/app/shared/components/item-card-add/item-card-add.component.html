@@ -1,0 +1,22 @@
+<ion-card class="card-container">
+  <ion-item class="row-flow" lines="none">
+    <div slot="start" class="image-style" [style.backgroundImage]="'url('+item.image+')'">
+      <ion-icon *ngIf="qty>0" class="selected" [ios]="'checkmark-circle-outline'" [md]="'checkmark-circle-sharp'" color="success"></ion-icon>
+    </div>
+    <div class="column-flow">
+      <div class="header">{{item.name}}</div>
+      <br>
+      <div *ngIf="item.price" class="price">{{item.price | currency}}</div>
+      <div class="price">per {{item.unit? item.unit: 'unit'}}</div>
+    </div>
+    <div class="column-center-flow"  slot="end" >
+      <span class="qty">
+        <ion-text class="unit">{{item.unit}}(s)</ion-text>
+        <app-item-quantity [qty]="item.quantity" [increment]="item?.qty?.increment" [initialQty]="item?.qty?.initialQty" (updateQty)="updateQuantity($event)"></app-item-quantity> 
+        <span class="totalPrice">
+          <ion-text *ngIf="totalPrice > 0">Price: {{totalPrice | currency}}</ion-text>
+        </span>
+      </span>
+    </div>
+  </ion-item>
+</ion-card>
