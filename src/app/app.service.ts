@@ -2,9 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { filter, map } from 'rxjs/operators'
-import { Category } from '../shared/models/category.model';
-import { ItemList } from '../shared/models/item-listing.model';
-import { Item } from '../shared/models/item.model';
+import { Category } from './shared/models/category.model';
+import { ItemList } from './shared/models/item-listing.model';
+import { Item } from './shared/models/item.model';
 import * as _ from 'underscore';
 
 @Injectable({

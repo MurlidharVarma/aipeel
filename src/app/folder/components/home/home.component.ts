@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Category } from 'src/app/shared/models/category.model';
 import { ItemList } from 'src/app/shared/models/item-listing.model';
 import { Item } from '../../../shared/models/item.model';
-import { AppService } from '../../app.service';
+import { AppService } from '../../../app.service';
 
 @Component({
   selector: 'app-home',

@@ -10,7 +10,7 @@ import { FolderPage } from './folder.page';
 import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
-import { AppService } from './app.service';
+import { AppService } from '../app.service';
 
 @NgModule({
   imports: [

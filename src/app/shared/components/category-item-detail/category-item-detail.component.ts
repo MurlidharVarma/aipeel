@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { CONFIG_OBJ } from 'src/app/config';
-import { AppService } from 'src/app/folder/app.service';
+import { CONFIG_OBJ } from '../../../config';
+import { AppService } from '../../../app.service';
 import { Category } from '../../models/category.model';
 import { Item } from '../../models/item.model';
 
