@@ -7,8 +7,50 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content *ngIf="items!=null && items.length>0" [fullscreen]="true" class="row-center-flow">
+  <ion-text> 
+    <h2 style="margin-left: 20px;">My Cart</h2>
+  </ion-text>
   <ion-list>
-    <app-item-card-add [item]="item" *ngFor="let item of items"></app-item-card-add>
+    <app-checkout-cart-item [item]="cartItem" *ngFor="let cartItem of items"></app-checkout-cart-item>
   </ion-list>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle color="primary">Contact Information</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list lines="full">
+        <ion-item>
+          <ion-label>Name</ion-label>
+          <ion-input clearInput type="text"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Email</ion-label>
+          <ion-input clearInput type="email"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Phone</ion-label>
+          <ion-input clearInput type="tel"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Address</ion-label>
+          <ion-textarea clearInput rows="6" cols="20"></ion-textarea>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" (click)="placeOrder()">Place Order</ion-button>
+
+</ion-content>
+
+<ion-content *ngIf="!(items && items!=null && items.length>0)" [fullscreen]="true" >
+  <ion-text> 
+    <h2 style="margin-left: 20px;">My Cart</h2>
+  </ion-text>
+      <div style="height: 80vh" class="row-center-flow">No items in cart</div>
 </ion-content>
