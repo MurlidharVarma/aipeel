@@ -2,7 +2,7 @@
   <ion-toolbar color="success" class="row-center-flow light">
     <ion-text slot="start" class="column-flow left-container">
       <ion-label>{{totalItems}} item(s) in cart</ion-label>
-      <ion-label>{{totalPrice | currency}}</ion-label>
+      <ion-label class="totalPrice">{{totalPrice | currency}}</ion-label>
     </ion-text>
     <ion-text slot="end" >
       <span class="row-center-flow checkout" (click)="navigateToCart()">
