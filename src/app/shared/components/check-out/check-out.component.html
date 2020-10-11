@@ -18,31 +18,31 @@
   <ion-card>
     <form [formGroup]="contactForm" novalidate>
     <ion-card-header>
-      <ion-card-subtitle color="primary">Contact Information</ion-card-subtitle>
+      <ion-card-subtitle color="primary">Deliver To</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
       <ion-list lines="full">
           <ion-item>
-            <ion-label>Name</ion-label>
+            <ion-label class="lbl">Name</ion-label>
             <ion-input clearInput type="text" formControlName="name"></ion-input>
             <ion-text class="error" *ngIf="contactForm.controls.name.touched && contactForm.controls.name.hasError('required')">This field is required</ion-text>
           </ion-item>
 
           <ion-item>
-            <ion-label>Email</ion-label>
+            <ion-label class="lbl">Email</ion-label>
             <ion-input clearInput type="email" formControlName="email"></ion-input>
             <ion-text class="error" *ngIf="contactForm.controls.email.touched && contactForm.controls.email.hasError('required')">This field is required</ion-text>
             <ion-text class="error" *ngIf="contactForm.controls.email.touched && contactForm.controls.email.hasError('email')">Invalid email</ion-text>
           </ion-item>
       
           <ion-item>
-            <ion-label>Phone</ion-label>
+            <ion-label class="lbl">Phone</ion-label>
             <ion-input clearInput type="tel" formControlName="phone"></ion-input>
             <ion-text class="error" *ngIf="contactForm.controls.phone.touched && contactForm.controls.phone.hasError('required')">This field is required</ion-text>
           </ion-item>
       
           <ion-item>
-            <ion-label>Address</ion-label>
+            <ion-label class="lbl">Address</ion-label>
             <ion-textarea clearInput rows="6" cols="20" formControlName="address" placeholder="Deliver at?"></ion-textarea>
             <ion-text class="error" *ngIf="contactForm.controls.address.touched && contactForm.controls.address.hasError('required')">This field is required</ion-text>
           </ion-item>

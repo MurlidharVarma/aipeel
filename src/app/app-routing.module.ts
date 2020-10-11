@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { ItemDetailComponent } from './shared/components/item-detail/item-detail.component';
 import { CategoryItemDetailComponent } from './shared/components/category-item-detail/category-item-detail.component';
 import { CheckOutComponent } from './shared/components/check-out/check-out.component';
+import { MyAccountComponent } from './shared/components/my-account/my-account.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'checkout',
     component: CheckOutComponent
+  },
+  {
+    path: 'myaccount',
+    component: MyAccountComponent
   }
 ];
 

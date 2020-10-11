@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="goBack()">
+      <ion-icon [ios]="'arrow-back-outline'" [md]="'arrow-back-sharp'" color="primary" style="font-size: 2rem;"></ion-icon>
+    </ion-buttons>
+    <ion-title>{{appName}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <ion-card-header>
+    <ion-card-title>My Account</ion-card-title>
+    <ion-text class="subtitle">Below information would prefill at checkout!</ion-text>
+  </ion-card-header>
+  <ion-card>
+    <form [formGroup]="contactForm" novalidate>
+  
+    <ion-card-content>
+      <ion-list lines="full">
+        <ion-item>
+          <ion-label class="lbl">Name</ion-label>
+          <ion-input clearInput type="text" formControlName="name"></ion-input>
+          <ion-text class="error" *ngIf="contactForm.controls.name.touched && contactForm.controls.name.hasError('required')">This field is required</ion-text>
+        </ion-item>
+
+        <ion-item>
+          <ion-label class="lbl">Email</ion-label>
+          <ion-input clearInput type="email" formControlName="email"></ion-input>
+          <ion-text class="error" *ngIf="contactForm.controls.email.touched && contactForm.controls.email.hasError('required')">This field is required</ion-text>
+          <ion-text class="error" *ngIf="contactForm.controls.email.touched && contactForm.controls.email.hasError('email')">Invalid email</ion-text>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label class="lbl">Phone</ion-label>
+          <ion-input clearInput type="tel" formControlName="phone"></ion-input>
+          <ion-text class="error" *ngIf="contactForm.controls.phone.touched && contactForm.controls.phone.hasError('required')">This field is required</ion-text>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label class="lbl">Address</ion-label>
+          <ion-textarea clearInput rows="6" cols="20" formControlName="address" placeholder="Deliver at?"></ion-textarea>
+          <ion-text class="error" *ngIf="contactForm.controls.address.touched && contactForm.controls.address.hasError('required')">This field is required</ion-text>
+        </ion-item>
+    </ion-list>
+      <ion-button expand="block" (click)="save()" [disabled]="!contactForm.valid">Save</ion-button>
+    </ion-card-content>
+    </form>
+  </ion-card>
+
+
+</ion-content>
+
+<app-check-out-footer></app-check-out-footer>
+
+
+
+

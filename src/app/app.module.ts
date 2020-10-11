@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { IonicStorageModule } from '@ionic/storage';
+import { CONFIG_OBJ } from './config';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     SharedModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    IonicStorageModule.forRoot({
+      name: `__${CONFIG_OBJ.appName.toLowerCase()}`,
+    })
   ],
   providers: [
     StatusBar,

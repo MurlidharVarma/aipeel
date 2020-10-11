@@ -15,6 +15,8 @@ import { CheckOutComponent } from './components/check-out/check-out.component';
 import { CheckoutCartItemComponent } from './components/checkout-cart-item/checkout-cart-item.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { IonicStorageModule } from '@ionic/storage';
+import { MyAccountComponent } from './components/my-account/my-account.component';
 
 
 
@@ -31,14 +33,16 @@ import { IonicModule } from '@ionic/angular';
     ItemCardAddComponent,
     CheckOutFooterComponent,
     CheckOutComponent,
-    CheckoutCartItemComponent
+    CheckoutCartItemComponent,
+    MyAccountComponent
   ],
   imports: [
     CommonModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    IonicModule
+    IonicModule,
+    IonicStorageModule
   ],
   exports:[
     ItemCardComponent, 
@@ -52,7 +56,8 @@ import { IonicModule } from '@ionic/angular';
     ItemCardAddComponent,
     CheckOutFooterComponent,
     CheckOutComponent,
-    CheckoutCartItemComponent
+    CheckoutCartItemComponent,
+    MyAccountComponent
   ],
 })
 export class SharedModule { }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
+import { Storage } from '@ionic/storage';
 import { CartService } from 'src/app/cart.service';
 import { CONFIG_OBJ } from 'src/app/config';
 import { CartItem } from '../../models/cart-item';
@@ -17,27 +18,33 @@ export class CheckOutComponent implements OnInit {
   items: CartItem[];
   totalPrice: number;
   totalItems: number;
+  isContactInfoExists: boolean = false;
 
   NL = `\n`; //new line
 
   contactForm: FormGroup;
   
-  constructor(private route: ActivatedRoute, private router: Router, private cartService: CartService, private fb: FormBuilder) {
+  constructor(private storage: Storage, private router: Router, private cartService: CartService, private fb: FormBuilder) {
     this.appName = CONFIG_OBJ.appName;
     this.cartService.cart.subscribe((items: CartItem[]) => {
       this.items = this.cartService.getCartItems();
       this.totalPrice = this.cartService.totalPrice;
       this.totalItems = this.cartService.totalItems;
-    })
-  }
-
-  ngOnInit() {
+    });
 
     this.contactForm = this.fb.group({
       name: [null, [Validators.required]],
       email: [null, [ Validators.required, Validators.email]],
       phone: [null, [Validators.required]],
       address: [null, [Validators.required]]
+    });
+  }
+
+  ngOnInit() {
+    this.storage.get("contact").then(contact => {
+      this.isContactInfoExists = true;
+      this.contactForm.setValue(contact);
+      this.contactForm.updateValueAndValidity();
     })
   }
 
@@ -47,8 +54,13 @@ export class CheckOutComponent implements OnInit {
 
   placeOrder(){
     if(this.contactForm && this.contactForm.valid){
-      let orderId: string = ""+new Date().getTime();
+
       let contact = this.contactForm.getRawValue();
+      if(!this.isContactInfoExists){
+        this.storage.set("contact", contact);
+      }
+
+      let orderId: string = ""+new Date().getTime();
 
       let order: Order = {
         orderId: orderId,
@@ -63,7 +75,6 @@ export class CheckOutComponent implements OnInit {
       let textMessage = this.generateOrderMessage(order);
       window.location.href = `https://api.whatsapp.com/send?phone=${CONFIG_OBJ.phone}&text=${textMessage}`;
     }
-    // https://api.whatsapp.com/send?phone=whatsappphonenumber&text=urlencodedtext
   }
 
   generateOrderMessage(order: Order){
