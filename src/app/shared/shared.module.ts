@@ -13,6 +13,8 @@ import { ItemCardAddComponent } from './components/item-card-add/item-card-add.c
 import { CheckOutFooterComponent } from './components/check-out-footer/check-out-footer.component';
 import { CheckOutComponent } from './components/check-out/check-out.component';
 import { CheckoutCartItemComponent } from './components/checkout-cart-item/checkout-cart-item.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular';
 
 
 
@@ -33,7 +35,10 @@ import { CheckoutCartItemComponent } from './components/checkout-cart-item/check
   ],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    IonicModule
   ],
   exports:[
     ItemCardComponent, 
