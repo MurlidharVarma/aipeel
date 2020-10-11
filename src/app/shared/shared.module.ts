@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { IonicStorageModule } from '@ionic/storage';
 import { MyAccountComponent } from './components/my-account/my-account.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 
@@ -34,7 +35,8 @@ import { MyAccountComponent } from './components/my-account/my-account.component
     CheckOutFooterComponent,
     CheckOutComponent,
     CheckoutCartItemComponent,
-    MyAccountComponent
+    MyAccountComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
@@ -57,7 +59,8 @@ import { MyAccountComponent } from './components/my-account/my-account.component
     CheckOutFooterComponent,
     CheckOutComponent,
     CheckoutCartItemComponent,
-    MyAccountComponent
+    MyAccountComponent,
+    ContactComponent
   ],
 })
 export class SharedModule { }

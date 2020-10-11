@@ -4,6 +4,7 @@ import { ItemDetailComponent } from './shared/components/item-detail/item-detail
 import { CategoryItemDetailComponent } from './shared/components/category-item-detail/category-item-detail.component';
 import { CheckOutComponent } from './shared/components/check-out/check-out.component';
 import { MyAccountComponent } from './shared/components/my-account/my-account.component';
+import { ContactComponent } from './shared/components/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -30,7 +31,11 @@ const routes: Routes = [
   {
     path: 'myaccount',
     component: MyAccountComponent
-  }
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
+  },
 ];
 
 @NgModule({

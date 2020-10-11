@@ -1,3 +1,32 @@
-<p>
-  contact works!
-</p>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="goBack()">
+      <ion-icon [ios]="'arrow-back-outline'" [md]="'arrow-back-sharp'" color="primary" style="font-size: 2rem;"></ion-icon>
+    </ion-buttons>
+    <ion-title>{{appName}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <ion-card >
+    <ion-card-header>
+      <ion-card-title>Contact Us</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-button expand="block" (click)="contactUs()">Message {{appName}} Support</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="aipeel">
+    <ion-text slot="end">
+      developed by <strong>Aipeel</strong>.
+    </ion-text>
+  </ion-toolbar>
+</ion-footer>
+
+
+
+

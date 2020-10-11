@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CONFIG_OBJ } from 'src/app/config';
 
 @Component({
   selector: 'app-contact',
@@ -7,8 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  appName: string;
+
+  constructor(private router: Router) {
+    this.appName = CONFIG_OBJ.appName;
+  }
 
   ngOnInit() {}
 
+  contactUs(){
+    window.location.href = `https://api.whatsapp.com/send?phone=${CONFIG_OBJ.phone}`;
+  }
+
+  goBack(){
+    this.router.navigate([".."])
+  }
 }
