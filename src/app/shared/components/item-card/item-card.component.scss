@@ -7,11 +7,21 @@
     justify-content: space-around;
 }
 
-.content-style{
+.column-flow{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.column-flow{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
 
 .image-style{
@@ -22,9 +32,10 @@
 }
 
 .main-content-style{
+    height: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
 }
 .header{
@@ -37,6 +48,14 @@
 }
 
 .price{
+    position: absolute;
     font-size: 0.8rem;
+    color: var(--ion-color-info);
+    bottom: 5px;
+    right: 10px;
+}
+
+.unit{
+    font-size: 0.75rem;
     color: var(--ion-color-info);
 }

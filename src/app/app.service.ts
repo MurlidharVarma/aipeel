@@ -36,9 +36,9 @@ export class AppService {
 
   getCategoryItemsById(categoryId: string): Observable<Item[]>{
     return this.http.get<Item[]>("assets/mocks/items.mock.json").pipe(
-      map(data =>{
-        return _.filter(data, e => e.categoryId == categoryId);
-      })
+      // map(data =>{
+      //   return _.filter(data, e => e.categoryId == categoryId);
+      // })
     )
   }
 }

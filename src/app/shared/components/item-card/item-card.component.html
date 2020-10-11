@@ -3,8 +3,11 @@
 
   <ion-card-content class="content-style">
     <div class="main-content-style">
-      <div class="header">{{item.name}}</div>
-      <div *ngIf="item.price" class="price">{{item.price | currency}} per {{item.unit? item.unit: 'unit'}}</div>
+      <div class="column-flow">
+        <div class="header">{{item.name}}</div>
+        <div class="unit">{{item.unitVal}} {{item.unit}}</div>
+      </div>
+      <div *ngIf="item.price" class="price">{{item.price | currency}}</div>
     </div>
   </ion-card-content>
     

@@ -12,20 +12,21 @@
     <ion-card-header style="padding: 0;margin:0;">
       <div class="item-image" [style.backgroundImage]="'url('+item.image+')'"></div>
       <br>
-      <div style="margin:25px;">
+      <div style="margin: 10px 25px;" class="column-flow">
         <ion-card-title>{{item.name}}</ion-card-title>
-        <ion-text *ngIf="item.price" class="price">{{item.price | currency}} per {{item.unit? item.unit: 'unit'}}</ion-text>
+        <ion-text *ngIf="item.unit">{{item.unitVal}} {{item.unit}}</ion-text>
+        <ion-text *ngIf="item.price" class="price">{{item.price | currency}}</ion-text>
+        <ion-text *ngIf="item.price" class="">{{ item.desc }}</ion-text>
       </div>
     </ion-card-header>
   
-    <ion-card-content style="margin:10px;">
-      {{ item.desc }}
-      <span class="row-flow qty-container">
+    <ion-card-content style="margin:5px;" class="column-right-flow">
+
+      <span class="column-flow qty-container">
+        <ion-text class="quantity-label">Quantity</ion-text>
         <app-item-quantity [qty]="item.quantity" [increment]="item?.qty?.increment" [initialQty]="item?.qty?.initialQty" (updateQty)="updateQuantity($event)"></app-item-quantity> 
-        <ion-text class="unit">{{item.unit}}</ion-text>
       </span>
-      <br>
-      <ion-text class="totalPrice">Total Price: {{totalPrice | currency}}</ion-text>
+      <ion-text class="totalPrice">Total: {{totalPrice | currency}}</ion-text>
     </ion-card-content>
   </ion-card>
 </ion-content>

@@ -5,6 +5,27 @@
     align-items: center;
 }
 
+.column-flow{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.column-right-flow{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.column-center-flow{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .qty-container{
     padding-top: 20px;
 }
@@ -24,13 +45,19 @@
 }
 
 .price{
-    margin: 10px 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     font-size: 0.9rem;
     color: var(--ion-color-info);
 }
 
 .totalPrice{
-    height: 50px;
+    height: 20px;
+    margin-top: 10px;
     font-size: 1rem;
     color: var(--ion-color-primary);
+}
+
+.quantity-label{
+    margin-left: 30px;
 }

@@ -5,18 +5,15 @@
     </div>
     <div class="column-flow">
       <div class="header">{{item.name}}</div>
-      <br>
+      <div class="unit">{{item.unitVal}} {{item.unit}}</div>
       <div *ngIf="item.price" class="price">{{item.price | currency}}</div>
-      <div class="price">per {{item.unit? item.unit: 'unit'}}</div>
     </div>
-    <div class="column-center-flow"  slot="end" >
-      <span class="qty">
-        <ion-text class="unit">{{item.unit}}(s)</ion-text>
+    <div class="column-center-flow qty"  slot="end" >
+        <ion-text class="unit">Quantity</ion-text>
         <app-item-quantity [qty]="item.quantity" [increment]="item?.qty?.increment" [initialQty]="item?.qty?.initialQty" (updateQty)="updateQuantity($event)"></app-item-quantity> 
         <span class="totalPrice">
-          <ion-text *ngIf="totalPrice > 0">Price: {{totalPrice | currency}}</ion-text>
+          <ion-text *ngIf="totalPrice > 0">Total: {{totalPrice | currency}}</ion-text>
         </span>
-      </span>
     </div>
   </ion-item>
 </ion-card>

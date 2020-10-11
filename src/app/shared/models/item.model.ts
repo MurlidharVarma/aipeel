@@ -6,6 +6,7 @@ export interface Item{
     category?: string,
     price: number;
     unit: string;
+    unitVal?: number,
     image: string;
     desc:string;
     qty?: {
