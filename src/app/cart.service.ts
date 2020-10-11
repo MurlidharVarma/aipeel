@@ -30,14 +30,20 @@ export class CartService {
 
     // if there exits cart items
     if(cartItems && cartItems != null && cartItems.length>0){
-      this.totalPrice = _.reduce(cartItems, (acc, e)=> { acc+=(e.price?e.price:0); return acc}, 0);
-      this.totalItems = cartItems.length;
-      this.cart.next(cartItems);
+      let nonZeroCartItems = _.reject(cartItems, (e: CartItem) => e.quantity == 0);
+      this.totalPrice = _.reduce(nonZeroCartItems, (acc, e)=> { acc+=(e.price?e.price:0); return acc}, 0);
+      this.totalItems = nonZeroCartItems.length;
+      if(this.totalItems > 0){
+        this.cart.next(nonZeroCartItems);
+      }else{
+        this.cart.next(null);
+      }
     }else{
       this.totalPrice = 0;
       this.totalItems = 0;
       this.cart.next(null);
     }
+    // console.log(this.getCartItems());
   }
 
   /**
@@ -88,5 +94,11 @@ export class CartService {
 
     //update the cart
     this.setCartItems(cartItems);
+  }
+
+  getCartItemByItemId(itemId: string){
+    let cartItems: CartItem[] = this.getCartItems();
+
+    return _.find(cartItems, (e:CartItem) => e.item.id == itemId);
   }
 }

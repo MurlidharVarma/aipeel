@@ -10,6 +10,8 @@ import { ItemQuantityComponent } from './components/item-quantity/item-quantity.
 import { CategoryItemDetailComponent } from './components/category-item-detail/category-item-detail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ItemCardAddComponent } from './components/item-card-add/item-card-add.component';
+import { CheckOutFooterComponent } from './components/check-out-footer/check-out-footer.component';
+import { CheckOutComponent } from './components/check-out/check-out.component';
 
 
 
@@ -23,7 +25,9 @@ import { ItemCardAddComponent } from './components/item-card-add/item-card-add.c
     ItemDetailComponent,
     ItemQuantityComponent,
     CategoryItemDetailComponent,
-    ItemCardAddComponent
+    ItemCardAddComponent,
+    CheckOutFooterComponent,
+    CheckOutComponent
   ],
   imports: [
     CommonModule,
@@ -38,7 +42,9 @@ import { ItemCardAddComponent } from './components/item-card-add/item-card-add.c
     ItemDetailComponent,
     ItemQuantityComponent,
     CategoryItemDetailComponent,
-    ItemCardAddComponent
+    ItemCardAddComponent,
+    CheckOutFooterComponent,
+    CheckOutComponent
   ],
 })
 export class SharedModule { }

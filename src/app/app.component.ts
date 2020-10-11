@@ -17,21 +17,22 @@ export class AppComponent implements OnInit {
       url: '/folder/home',
       icon: 'home'
     },
-    {
-      title: 'My Account',
-      url: '/folder/Outbox',
-      icon: 'person'
-    },
-    {
-      title: 'My Orders',
-      url: '/folder/Favorites',
-      icon: 'cart'
-    },
+    // {
+    //   title: 'My Account',
+    //   url: '/folder/Outbox',
+    //   icon: 'person'
+    // },
+    // {
+    //   title: 'My Orders',
+    //   url: '/folder/Favorites',
+    //   icon: 'cart'
+    // },
     {
       title: 'My Cart',
-      url: '/folder/cart',
-      icon: 'list'
-    },    {
+      url: '/checkout',
+      icon: 'cart'
+    }, 
+    {
       title: 'Contact Us',
       url: '/folder/Archived',
       icon: 'call'

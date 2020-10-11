@@ -8,13 +8,9 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div>
     <router-outlet></router-outlet>
   </div>
 </ion-content>
+
+<app-check-out-footer></app-check-out-footer>

@@ -1,0 +1,14 @@
+<ion-footer *ngIf="totalItems > 0" class="ion-no-border" >
+  <ion-toolbar color="success" class="row-center-flow light">
+    <ion-text slot="start" class="column-flow left-container">
+      <ion-label>{{totalItems}} item(s) in cart</ion-label>
+      <ion-label>{{totalPrice | currency}}</ion-label>
+    </ion-text>
+    <ion-text slot="end" >
+      <span class="row-center-flow checkout" (click)="navigateToCart()">
+        Checkout
+        <ion-icon [ios]="'chevron-forward-circle-outline'" [md]="'chevron-forward-circle-sharp'" color="light" style="font-size: 2rem;"></ion-icon>
+      </span>
+    </ion-text>
+  </ion-toolbar>
+</ion-footer>

@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start" (click)="goBack()">
       <ion-icon [ios]="'arrow-back-outline'" [md]="'arrow-back-sharp'" color="primary" style="font-size: 2rem;"></ion-icon>
@@ -24,12 +24,15 @@
 
       <span class="column-flow qty-container">
         <ion-text class="quantity-label">Quantity</ion-text>
-        <app-item-quantity [qty]="item.quantity" [increment]="item?.qty?.increment" [initialQty]="item?.qty?.initialQty" (updateQty)="updateQuantity($event)"></app-item-quantity> 
+        <app-item-quantity [qty]="qty" [increment]="item?.qty?.increment" [initialQty]="item?.qty?.initialQty" (updateQty)="updateQuantity($event)"></app-item-quantity> 
       </span>
       <ion-text class="totalPrice">Total: {{totalPrice | currency}}</ion-text>
     </ion-card-content>
   </ion-card>
 </ion-content>
+
+<app-check-out-footer></app-check-out-footer>
+
 
 
 

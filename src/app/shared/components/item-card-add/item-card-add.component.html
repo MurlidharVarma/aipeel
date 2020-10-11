@@ -10,7 +10,7 @@
     </div>
     <div class="column-center-flow qty"  slot="end" >
         <ion-text class="unit">Quantity</ion-text>
-        <app-item-quantity [qty]="item.quantity" [increment]="item?.qty?.increment" [initialQty]="item?.qty?.initialQty" (updateQty)="updateQuantity($event)"></app-item-quantity> 
+        <app-item-quantity [qty]="qty" [increment]="item?.qty?.increment" [initialQty]="item?.qty?.initialQty" (updateQty)="updateQuantity($event)"></app-item-quantity> 
         <span class="totalPrice">
           <ion-text *ngIf="totalPrice > 0">Total: {{totalPrice | currency}}</ion-text>
         </span>

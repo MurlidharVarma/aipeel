@@ -1,0 +1,26 @@
+.row-center-flow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column-flow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.light{
+    color: var(--ion-color-light)
+}
+
+.left-container{
+    margin-left: 20px;
+}
+
+.checkout{
+    font-weight: bold;
+}
