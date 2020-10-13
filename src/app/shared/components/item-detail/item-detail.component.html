@@ -3,7 +3,7 @@
     <ion-buttons slot="start" (click)="goBack()">
       <ion-icon [ios]="'arrow-back-outline'" [md]="'arrow-back-sharp'" color="primary" style="font-size: 2rem;"></ion-icon>
     </ion-buttons>
-    <ion-title>{{appName}}</ion-title>
+    <app-name></app-name>
   </ion-toolbar>
 </ion-header>
 
@@ -13,7 +13,7 @@
       <div class="item-image" [style.backgroundImage]="'url('+item.image+')'"></div>
       <br>
       <div style="margin: 10px 25px;" class="column-flow">
-        <ion-card-title>{{item.name}}</ion-card-title>
+        <ion-card-title color="primary">{{item.name}}</ion-card-title>
         <ion-text *ngIf="item.unit">{{item.unitVal}} {{item.unit}}</ion-text>
         <ion-text *ngIf="item.price" class="price">
           <span>{{item.price | currency}}</span>

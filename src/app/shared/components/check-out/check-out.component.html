@@ -3,7 +3,7 @@
     <ion-buttons slot="start" (click)="goBack()">
       <ion-icon [ios]="'arrow-back-outline'" [md]="'arrow-back-sharp'" color="primary" style="font-size: 2rem;"></ion-icon>
     </ion-buttons>
-    <ion-title>{{appName}}</ion-title>
+    <app-name></app-name>
   </ion-toolbar>
 </ion-header>
 
@@ -43,7 +43,7 @@
       
           <ion-item>
             <ion-label class="lbl">Address</ion-label>
-            <ion-textarea clearInput rows="3" cols="30" formControlName="address" placeholder="Deliver at?"></ion-textarea>
+            <ion-textarea rows="3" cols="30" formControlName="address" placeholder="Deliver at?"></ion-textarea>
             <ion-text class="error" *ngIf="contactForm.controls.address.touched && contactForm.controls.address.hasError('required')">This field is required</ion-text>
           </ion-item>
       </ion-list>
