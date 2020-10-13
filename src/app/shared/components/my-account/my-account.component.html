@@ -43,11 +43,14 @@
           <ion-text class="error" *ngIf="contactForm.controls.address.touched && contactForm.controls.address.hasError('required')">This field is required</ion-text>
         </ion-item>
     </ion-list>
-      <ion-button expand="block" (click)="save()" [disabled]="!contactForm.valid">Save</ion-button>
-      <br>
-      <ion-text>
-        <ion-label color="success">{{msg}}</ion-label>
-      </ion-text>
+    <br>
+      <div class="center-flow">
+        <ion-button class="btn" fill="outline" (click)="save()" [disabled]="!contactForm.valid">Save</ion-button>
+        <br>
+        <ion-text>
+          <ion-label color="success">{{msg}}</ion-label>
+        </ion-text>
+      </div>
     </ion-card-content>
     </form>
   </ion-card>

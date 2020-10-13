@@ -19,3 +19,13 @@
     color: var(--ion-color-medium);
     font-size: 0.8rem;
 }
+.center-flow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width:50%
+}
