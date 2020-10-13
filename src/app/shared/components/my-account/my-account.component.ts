@@ -14,18 +14,21 @@ export class MyAccountComponent implements OnInit {
   appName: string;
   contactForm: FormGroup;
 
+  msg: string;
+
   constructor(private storage: Storage, private router: Router, private fb: FormBuilder) {
     this.appName = CONFIG_OBJ.appName;
 
     this.contactForm = this.fb.group({
       name: [null, [Validators.required]],
-      email: [null, [ Validators.required, Validators.email]],
-      phone: [null, [Validators.required]],
+      // email: [null, [ Validators.required, Validators.email]],
+      // phone: [null, [Validators.required]],
       address: [null, [Validators.required]]
     });
   }
 
   ngOnInit() {
+    this.msg = null;
     this.storage.get("contact").then(contact => {
       this.contactForm.setValue(contact);
       this.contactForm.updateValueAndValidity();
@@ -40,6 +43,7 @@ export class MyAccountComponent implements OnInit {
     if(this.contactForm && this.contactForm.valid){
       let contact = this.contactForm.getRawValue();
       this.storage.set("contact", contact);
+      this.msg="Saved successfully!"
     }
   }
 }

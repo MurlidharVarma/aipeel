@@ -5,3 +5,12 @@ android/app/build/outputs/apk/debug/app-debug.apk
 
 
 ./gradlew clean build
+
+rm -rf android/
+export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+
+ionic capacitor add android
+ionic capacitor copy android && cd android && ./gradlew assembleDebug && cd ..

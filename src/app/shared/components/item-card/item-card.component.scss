@@ -32,7 +32,7 @@
 }
 
 .main-content-style{
-    height: 40px;
+    height: 45px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,14 +48,20 @@
 }
 
 .price{
+    color: var(--ion-color-dark);
     position: absolute;
     font-size: 0.8rem;
-    color: var(--ion-color-info);
-    bottom: 5px;
+    bottom: 0px;
     right: 10px;
 }
 
 .unit{
     font-size: 0.75rem;
     color: var(--ion-color-info);
+}
+
+.actualPrice{
+    color: var(--ion-color-medium);
+    text-decoration-line: line-through;
+    margin: 0px 7px;
 }

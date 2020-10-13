@@ -15,8 +15,12 @@
       <div style="margin: 10px 25px;" class="column-flow">
         <ion-card-title>{{item.name}}</ion-card-title>
         <ion-text *ngIf="item.unit">{{item.unitVal}} {{item.unit}}</ion-text>
-        <ion-text *ngIf="item.price" class="price">{{item.price | currency}}</ion-text>
-        <ion-text *ngIf="item.price" class="">{{ item.desc }}</ion-text>
+        <ion-text *ngIf="item.price" class="price">
+          <span>{{item.price | currency}}</span>
+          <span *ngIf="item.actualprice && item.actualprice>0" class="actualPrice">{{item.actualprice | currency}}</span>
+          <span *ngIf="item.actualprice && item.actualprice>0" class="savePrice">Save: {{ savePrice | currency }}</span>
+        </ion-text>
+        <ion-text *ngIf="item.desc" class="">{{ item.desc }}</ion-text>
       </div>
     </ion-card-header>
   

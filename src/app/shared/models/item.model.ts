@@ -5,6 +5,7 @@ export interface Item{
     name: string;
     category?: string,
     price: number;
+    actualprice?: number;
     unit: string;
     unitVal?: number,
     image: string;

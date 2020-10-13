@@ -34,8 +34,8 @@ export class CheckOutComponent implements OnInit {
 
     this.contactForm = this.fb.group({
       name: [null, [Validators.required]],
-      email: [null, [ Validators.required, Validators.email]],
-      phone: [null, [Validators.required]],
+      // email: [null, [ Validators.required, Validators.email]],
+      // phone: [null, [Validators.required]],
       address: [null, [Validators.required]]
     });
   }

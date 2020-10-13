@@ -6,7 +6,10 @@
     <div class="column-flow">
       <div class="header">{{item.name}}</div>
       <div class="unit">{{item.unitVal}} {{item.unit}}</div>
-      <div *ngIf="item.price" class="price">{{item.price | currency}}</div>
+      <div *ngIf="item.price" class="price">
+        <div *ngIf="item.actualprice && item.actualprice>0" class="actualPrice">{{item.actualprice | currency}}</div>
+        <div [style.marginTop]="(item.actualprice && item.actualprice>0)?'0px':'10px'">{{item.price | currency}}</div>
+      </div>
     </div>
     <div class="column-center-flow qty"  slot="end" >
         <ion-text class="unit">Quantity</ion-text>

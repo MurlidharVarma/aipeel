@@ -19,6 +19,7 @@ export class ItemDetailComponent implements OnInit {
   itemId: string;
   qty: number;
   totalPrice: number = 0;
+  savePrice: number = 0;
 
   constructor(private route: ActivatedRoute, private router: Router, private cartService: CartService) {
     this.appName = CONFIG_OBJ.appName;
@@ -26,6 +27,9 @@ export class ItemDetailComponent implements OnInit {
 
   ngOnInit() {
     this.item = history.state;
+    if(this.item.actualprice && this.item.actualprice>0){
+      this.savePrice = this.item.actualprice - this.item.price;
+    }
     let cartItem: CartItem = this.cartService.getCartItemByItemId(this.item.id);
     if(cartItem && cartItem!=null){
       setTimeout(() => {

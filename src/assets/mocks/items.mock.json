@@ -16,6 +16,7 @@
        "tags":["deal"],
        "name": "Tomatoes",
        "desc": "Keeping you close to nature with these beautiful organic tomatoes",
+       "actualprice": 375,
        "price": 350,
        "unit": "kg",
        "unitVal": "1",

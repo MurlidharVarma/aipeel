@@ -24,11 +24,11 @@
       <ion-list lines="full">
           <ion-item>
             <ion-label class="lbl">Name</ion-label>
-            <ion-input clearInput type="text" formControlName="name"></ion-input>
+            <ion-input type="text" formControlName="name"></ion-input>
             <ion-text class="error" *ngIf="contactForm.controls.name.touched && contactForm.controls.name.hasError('required')">This field is required</ion-text>
           </ion-item>
 
-          <ion-item>
+          <!-- <ion-item>
             <ion-label class="lbl">Email</ion-label>
             <ion-input clearInput type="email" formControlName="email"></ion-input>
             <ion-text class="error" *ngIf="contactForm.controls.email.touched && contactForm.controls.email.hasError('required')">This field is required</ion-text>
@@ -39,11 +39,11 @@
             <ion-label class="lbl">Phone</ion-label>
             <ion-input clearInput type="tel" formControlName="phone"></ion-input>
             <ion-text class="error" *ngIf="contactForm.controls.phone.touched && contactForm.controls.phone.hasError('required')">This field is required</ion-text>
-          </ion-item>
+          </ion-item> -->
       
           <ion-item>
             <ion-label class="lbl">Address</ion-label>
-            <ion-textarea clearInput rows="6" cols="20" formControlName="address" placeholder="Deliver at?"></ion-textarea>
+            <ion-textarea clearInput rows="3" cols="30" formControlName="address" placeholder="Deliver at?"></ion-textarea>
             <ion-text class="error" *ngIf="contactForm.controls.address.touched && contactForm.controls.address.hasError('required')">This field is required</ion-text>
           </ion-item>
       </ion-list>
@@ -51,6 +51,10 @@
       </form>
   </ion-card>
 
+  <ion-text class="order-summary">
+      <ion-label color="primary">Total Items: <span class="summary">{{totalItems}}</span></ion-label>
+      <ion-label color="primary">Total Amount: <span class="summary">{{totalPrice | currency}}</span></ion-label>
+  </ion-text>
   <ion-button expand="block" (click)="placeOrder()" [disabled]="!contactForm.valid">Place Order</ion-button>
 
 </ion-content>

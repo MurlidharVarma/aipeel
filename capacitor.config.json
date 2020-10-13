@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "aipeel",
+  "appId": "com.aipeel.kera",
+  "appName": "Kerabazaar",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

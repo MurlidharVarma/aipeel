@@ -44,7 +44,7 @@
 .price{
     font-size: 0.8rem;
     color: var(--ion-color-info);
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .qty{
@@ -70,4 +70,9 @@
     top: 5px;
     right: 5px;
     cursor: pointer;
+}
+
+.actualPrice{
+    color: var(--ion-color-medium);
+    text-decoration-line: line-through;
 }

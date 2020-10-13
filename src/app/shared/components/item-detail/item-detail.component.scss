@@ -61,3 +61,13 @@
 .quantity-label{
     margin-left: 30px;
 }
+
+.actualPrice{
+    color: var(--ion-color-medium);
+    text-decoration-line: line-through;
+    margin: 0px 7px;
+}
+
+.savePrice{
+    color: var(--ion-color-success);
+}
