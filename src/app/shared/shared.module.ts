@@ -19,6 +19,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { MyAccountComponent } from './components/my-account/my-account.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NameComponent } from './components/name/name.component';
+import { GratitudeComponent } from './components/gratitude/gratitude.component';
 
 
 
@@ -38,7 +39,8 @@ import { NameComponent } from './components/name/name.component';
     CheckoutCartItemComponent,
     MyAccountComponent,
     ContactComponent,
-    NameComponent
+    NameComponent,
+    GratitudeComponent
   ],
   imports: [
     CommonModule,
@@ -63,7 +65,8 @@ import { NameComponent } from './components/name/name.component';
     CheckoutCartItemComponent,
     MyAccountComponent,
     ContactComponent,
-    NameComponent
+    NameComponent,
+    GratitudeComponent
   ],
 })
 export class SharedModule { }

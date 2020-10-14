@@ -5,6 +5,7 @@ import { CategoryItemDetailComponent } from './shared/components/category-item-d
 import { CheckOutComponent } from './shared/components/check-out/check-out.component';
 import { MyAccountComponent } from './shared/components/my-account/my-account.component';
 import { ContactComponent } from './shared/components/contact/contact.component';
+import { GratitudeComponent } from './shared/components/gratitude/gratitude.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'gratitude',
+    component: GratitudeComponent
   },
 ];
 

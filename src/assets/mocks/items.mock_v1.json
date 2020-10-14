@@ -1,0 +1,1455 @@
+
+
+ [
+ {
+         "id": "1",
+         "tags":["deal"],
+         "categoryId": "1", 
+         "name": "Nirapara Rice",
+         "desc": "Nirapara Rice 5KG bag",
+		 "price": 335,
+         "actualprice": 350,
+         "unit": "kg",
+         "unitVal": "5",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  
+	  {
+         "id": "2",
+         "tags":["deal"],
+         "categoryId": "1", 
+         "name": "Nirapara Rice",
+         "desc": "Nirapara Rice 10KG bag",
+		 "price": 670,
+         "actualprice": 700,
+         "unit": "kg",
+         "unitVal": "10",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "3",
+         "tags":["deal"],
+         "categoryId": "1", 
+         "name": "Double Horse Rice",
+         "desc": "Double Horse Rice 5KG bag",
+		 "price": 330,
+         "actualprice": 345,
+         "unit": "kg",
+         "unitVal": "5",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "4",
+         "tags":["deal"],
+         "categoryId": "1", 
+         "name": "Rice",
+         "desc": "Rice",
+		 "price": 62,
+         "unit": "kg",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	   {
+         "id": "5",
+         "tags":[""],
+         "categoryId": "1", 
+         "name": "Poodi Rice",
+         "desc": "Poodi Rice",
+		 "price": 72,
+         "unit": "kg",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "6",
+         "tags":[""],
+         "categoryId": "1", 
+         "name": "Pacheri (SP.Rice)",
+         "desc": "Pacheri (SP.Rice)",
+		 "price": 72,
+         "unit": "kg",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "7",
+         "tags":[""],
+         "categoryId": "1", 
+         "name": "Avil Red",
+         "desc": "Avil Red",
+		 "price": 80,
+         "unit": "kg",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  
+	  {
+         "id": "8",
+         "tags":["deal"],
+         "categoryId": "1", 
+         "name": "3V Rice Seva",
+         "desc": "3V Rice Seva",
+		 "price": 48,
+		 "actualprice":50,
+         "unit": "gms",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  
+	 
+	  
+	  {
+         "id": "9",
+         "tags":["deal"],
+         "categoryId": "2", 
+         "name": "Nirapara Puttu",
+         "desc": "Nirapara Puttu",
+		 "price": 51,
+		 "actualprice":53,
+         "unit": "packet",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  
+	   {
+         "id": "10",
+         "tags":["deal"],
+         "categoryId": "2", 
+         "name": "Nirapara Appam",
+         "desc": "Nirapara Appam",
+		 "price": 51,
+		 "actualprice":53,
+         "unit": "packet",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "11",
+         "tags":["deal"],
+         "categoryId": "2", 
+         "name": "Nirapara Chempa Puttu",
+         "desc": "Nirapara Chempa Puttu",
+		 "price": 57,
+		 "actualprice":59,
+         "unit": "packet",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "12",
+         "tags":["deal"],
+         "categoryId": "2", 
+         "name": "DINESH COCONUT MILK(200ML)",
+         "desc": "DINESH COCONUT MILK(200ML)",
+		 "price": 77,
+		 "actualprice":79,
+         "unit": "ml",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "13",
+         "tags":["deal"],
+         "categoryId": "2", 
+         "name": "DH.PALAppam",
+         "desc": "DH.PALAppam",
+		 "price": 67,
+		 "actualprice":69,
+         "unit": "packet",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "14",
+         "tags":["deal"],
+         "categoryId": "2", 
+         "name": "K.L.F COCONUT POWDER 25GM",
+         "desc": "K.L.F COCONUT POWDER 25GM",
+		 "price": 23,
+		 "actualprice":25,
+         "unit": "gms",
+         "unitVal": "25",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "15",
+         "tags":["deal"],
+         "categoryId": "2", 
+         "name": "K.L.F COCONUT POWDER 100GM",
+         "desc": "K.L.F COCONUT POWDER 100GM",
+		 "price": 88,
+		 "actualprice":90,
+         "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  
+	  {
+         "id": "16",
+         "tags":["deal"],
+         "categoryId": "3", 
+         "name": "EASTERN SAMBAR",
+         "desc": "EASTERN SAMBAR",
+		 "price": 43,
+		 "actualprice":45,
+         "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "17",
+         "tags":["deal"],
+         "categoryId": "3", 
+         "name": "EASTERN CHICKEN",
+         "desc": "EASTERN CHICKEN",
+		 "price": 50,
+		 "actualprice":52,
+         "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "18",
+         "tags":["deal"],
+         "categoryId": "3", 
+         "name": "EASTERN MUTTON",
+         "desc": "EASTERN MUTTON",
+		 "price": 50,
+		 "actualprice":52,
+         "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "19",
+         "tags":["deal"],
+         "categoryId": "3", 
+         "name": "EASTERN MEAT",
+         "desc": "EASTERN MEAT",
+		 "price": 44,
+		 "actualprice":46,
+         "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "20",
+         "tags":["deal"],
+         "categoryId": "3", 
+         "name": "EASTERN FISH",
+         "desc": "EASTERN FISH",
+		 "price": 42,
+		 "actualprice":44,
+         "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	   {
+         "id": "21",
+         "tags":["deal"],
+         "categoryId": "3", 
+         "name": "EASTERN RASAM",
+         "desc": "EASTERN RASAM",
+		 "price": 48,
+		 "actualprice":50,
+         "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "22",
+         "tags":["deal"],
+         "categoryId": "3", 
+         "name": "EASTERN CHILLY",
+         "desc": "EASTERN CHILLY",
+		 "price": 33,
+		 "actualprice":35,
+         "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "23",
+         "tags":["deal"],
+         "categoryId": "3", 
+         "name": "EASTERN CORIANDER",
+         "desc": "EASTERN CORIANDER",
+		 "price": 28,
+		 "actualprice":30,
+         "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "24",
+         "tags":["deal"],
+         "categoryId": "3", 
+         "name": "EASTERN TURMERIC",
+         "desc": "EASTERN TURMERIC",
+		 "price": 29,
+		 "actualprice":31,
+         "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "25",
+         "tags":["deal"],
+         "categoryId": "3", 
+         "name": "EASTERN KASHMIRI CHILLY",
+         "desc": "EASTERN KASHMIRI CHILLY",
+		 "price": 48,
+		 "actualprice":50,
+         "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "26",
+         "tags":["deal"],
+         "categoryId": "3", 
+         "name": "BRAHMINS SAMBAR",
+         "desc": "BRAHMINS SAMBAR",
+		 "price": 43,
+		 "actualprice":45,
+         "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "27",
+         "tags":["deal"],
+         "categoryId": "3", 
+         "name": "BRAHMINS CHATNI",
+         "desc": "BRAHMINS CHATNI",
+		 "price": 50,
+		 "actualprice":52,
+         "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	   {
+         "id": "28",
+         "tags":["deal"],
+         "categoryId": "3", 
+         "name": "SHAKTHI SAMBAR",
+         "desc": "SHAKTHI SAMBAR",
+		 "price": 46,
+		 "actualprice":48,
+         "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  
+	  
+	  
+	  {
+         "id": "29",
+         "tags":["deal"],
+         "categoryId": "4", 
+         "name": "NARASUS TENDER MANGO 500GM",
+         "desc": "NARASUS TENDER MANGO 500GM",
+		 "price": 175,
+		 "actualprice":177,
+         "unit": "gms",
+         "unitVal": "500",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	   {
+         "id": "30",
+         "tags":["deal"],
+         "categoryId": "4", 
+         "name": "NARASUS CUT MANGO 80GM",
+         "desc": "NARASUS CUT MANGO 80GM",
+		 "price": 18,
+		 "actualprice":20,
+         "unit": "gms",
+         "unitVal": "80",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	   {
+         "id": "31",
+         "tags":["deal"],
+         "categoryId": "4", 
+         "name": "NARASUS LIME 80GM",
+         "desc": "NARASUS LIME 80GM",
+		 "price": 18,
+		 "actualprice":20,
+         "unit": "gms",
+         "unitVal": "80",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "32",
+         "tags":["deal"],
+         "categoryId": "4", 
+         "name": "Nirapara CUT MANGO 400GM",
+         "desc": "Nirapara CUT MANGO 400GM",
+		 "price": 83,
+		 "actualprice":85,
+         "unit": "gms",
+         "unitVal": "400",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	   {
+         "id": "33",
+         "tags":["deal"],
+         "categoryId": "4", 
+         "name": "Nirapara LIME 400GM",
+         "desc": "Nirapara LIME 400GM",
+		 "price": 80,
+		 "actualprice":82,
+         "unit": "gms",
+         "unitVal": "400",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "34",
+         "tags":["deal"],
+         "categoryId": "4", 
+         "name": "Nirapara TENDER MANGO 400GM",
+         "desc": "Nirapara TENDER MANGO 400GM",
+		 "price": 128,
+		 "actualprice":130,
+         "unit": "gms",
+         "unitVal": "400",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "35",
+         "tags":["deal"],
+         "categoryId": "4", 
+         "name": "Nirapara VADUKAPULI 400GM",
+         "desc": "Nirapara VADUKAPULI 400GM",
+		 "price": 88,
+		 "actualprice":90,
+         "unit": "gms",
+         "unitVal": "400",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "36",
+         "tags":["deal"],
+         "categoryId": "4", 
+         "name": "Nirapara PRAWNS 400GM",
+         "desc": "Nirapara PRAWNS 400GM",
+		 "price": 198,
+		 "actualprice":200,
+         "unit": "gms",
+         "unitVal": "400",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	   {
+         "id": "37",
+         "tags":["deal"],
+         "categoryId": "4", 
+         "name": "Nirapara FISH 400GM",
+         "desc": "Nirapara FISH 400GM",
+		 "price": 191,
+		 "actualprice":193,
+         "unit": "gms",
+         "unitVal": "400",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	   {
+         "id": "38",
+         "tags":["deal"],
+         "categoryId": "4", 
+         "name": "Nirapara CUT MANGO 150GM",
+         "desc": "Nirapara CUT MANGO 150GM",
+		 "price": 44,
+		 "actualprice":46,
+         "unit": "gms",
+         "unitVal": "150",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "39",
+         "tags":["deal"],
+         "categoryId": "4", 
+         "name": "Nirapara TENDER MANGO 150GM",
+         "desc": "Nirapara TENDER MANGO 150GM",
+		 "price": 62,
+		 "actualprice":64,
+         "unit": "gms",
+         "unitVal": "150",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "40",
+         "tags":["deal"],
+         "categoryId": "4", 
+         "name": "Nirapara LIME 150GM",
+         "desc": "Nirapara LIME 150GM",
+		 "price": 41,
+		 "actualprice":43,
+         "unit": "gms",
+         "unitVal": "150",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	   {
+         "id": "41",
+         "tags":["deal"],
+         "categoryId": "4", 
+         "name": "Nirapara GARLIC 150GM",
+         "desc": "Nirapara GARLIC 150GM",
+		 "price": 56,
+		 "actualprice":58,
+         "unit": "gms",
+         "unitVal": "150",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "42",
+         "tags":["deal"],
+         "categoryId": "4", 
+         "name": "CURD CHILLY 100GM",
+         "desc": "CURD CHILLY 100GM",
+		 "price": 28,
+		 "actualprice":30,
+         "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  
+	  
+	  
+	  {
+         "id": "43",
+         "tags":["deal"],
+         "categoryId": "5", 
+         "name": "MILMA GHEE (500 ML)",
+         "desc": "MILMA GHEE (500 ML)",
+		 "price": 360,
+		 "actualprice":365,
+         "unit": "ml",
+         "unitVal": "500",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "44",
+         "tags":["deal"],
+         "categoryId": "5", 
+         "name": "MILMA GHEE (200 ML)",
+         "desc": "MILMA GHEE (200 ML)",
+		 "price": 150,
+		 "actualprice":155,
+         "unit": "ml",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "45",
+         "tags":["deal"],
+         "categoryId": "5", 
+         "name": "KERA COCONUT OIL(1L)",
+         "desc": "KERA COCONUT OIL(1L)",
+		 "price": 295,
+		 "actualprice":300,
+         "unit": "ml",
+         "unitVal": "1000",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	    {
+         "id": "46",
+         "tags":["deal"],
+         "categoryId": "5", 
+         "name": "KERACOCONUT OIL (500ML)",
+         "desc": "KERACOCONUT OIL (500ML)",
+		 "price": 150,
+		 "actualprice":155,
+         "unit": "ml",
+         "unitVal": "500",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	   {
+         "id": "47",
+         "tags":["deal"],
+         "categoryId": "5", 
+         "name": "K.L.F POUCH (1000ML)",
+         "desc": "K.L.F POUCH (1000ML)",
+		 "price": 260,
+		 "actualprice":265,
+         "unit": "ml",
+         "unitVal": "1000",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "48",
+         "tags":["deal"],
+         "categoryId": "5", 
+         "name": "K.L.F POUCH (500ML)",
+         "desc": "K.L.F POUCH (500ML)",
+		 "price": 135,
+		 "actualprice":140,
+         "unit": "ml",
+         "unitVal": "500",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "49",
+         "tags":["deal"],
+         "categoryId": "5", 
+         "name": "K.L.F PET (1000ML)",
+         "desc": "K.L.F PET (1000ML)",
+		 "price": 286,
+		 "actualprice":291,
+         "unit": "ml",
+         "unitVal": "1000",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "50",
+         "tags":["deal"],
+         "categoryId": "5", 
+         "name": "K.L.F PET (500ML)",
+         "desc": "K.L.F PET (500ML)",
+		 "price": 140,
+		 "actualprice":144,
+         "unit": "ml",
+         "unitVal": "500",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "51",
+         "tags":["deal"],
+         "categoryId": "5", 
+         "name": "IDHAYAM TIL OIL(500ML)",
+         "desc": "IDHAYAM TIL OIL(500ML)",
+		 "price": 175,
+		 "unit": "ml",
+         "unitVal": "500",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  
+	  
+	  
+	  {
+         "id": "52",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "Halwa Kozhikode",
+         "desc": "Halwa Kozhikode",
+		 "price": 50,
+		 "unit": "gms",
+         "unitVal": "250",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  
+	   {
+         "id": "53",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "Halwa Kozhikode Special",
+         "desc": "Halwa Kozhikode Special",
+		 "price": 120,
+		 "unit": "box",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "54",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "Banana Chips",
+         "desc": "Banana Chips made in Coconut oil",
+		 "price": 80,
+		 "unit": "gms",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	   {
+         "id": "55",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "BANANA 4CUT CHIPS-200gm",
+         "desc": "BANANA 4CUT CHIPS-200gm",
+		 "price": 80,
+		 "unit": "gms",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "56",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "SARKARA UPPERI-200 gm",
+         "desc": "SARKARA UPPERI-200 gm",
+		 "price": 80,
+		 "unit": "gms",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "57",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "KAPPA SELLI-200 gm",
+         "desc": "KAPPA SELLI-200 gm",
+		 "price": 50,
+		 "unit": "gms",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "58",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "JACKFRUIT CHIPS-200gm",
+         "desc": "JACKFRUIT CHIPS-200gm",
+		 "price": 72,
+		 "unit": "gms",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "59",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "MIXTURE(500gm)",
+         "desc": "MIXTURE(500gm)",
+		 "price": 125,
+		 "unit": "gms",
+         "unitVal": "500",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	   {
+         "id": "60",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "KAI MURUKE-200gm",
+         "desc": "KAI MURUKE-200gm",
+		 "price": 68,
+		 "unit": "gms",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "61",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "PAKAWADA (200gm)",
+         "desc": "PAKAWADA (200gm)",
+		 "price": 50,
+		 "unit": "gms",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "62",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "SING LADU-200gm",
+         "desc": "SING LADU-200gm",
+		 "price": 80,
+		 "unit": "gms",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "63",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "TILL LADU-200 gm",
+         "desc": "TILL LADU-200 gm",
+		 "price": 74,
+		 "unit": "gms",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "64",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "DURGA MIXTURE-200gm",
+         "desc": "DURGA MIXTURE-200gm",
+		 "price": 60,
+		 "unit": "gms",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "65",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "Rice CHAKLI(SP.CHAKLI)",
+         "desc": "Rice CHAKLI(SP.CHAKLI)",
+		 "price": 40,
+		 "unit": "packet",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "66",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "A1 KAPPA ROUND CHIPS(RK) 200gm",
+         "desc": "A1 KAPPA ROUND CHIPS(RK) 200gm",
+		 "price": 60,
+		 "unit": "gms",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "67",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "ACHAppam",
+         "desc": "ACHAppam",
+		 "price": 60,
+		 "unit": "packet",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "68",
+         "tags":["popular"],
+         "categoryId": "6", 
+         "name": "UNNIAppam(150gm)",
+         "desc": "UNNIAppam(150gm)",
+		 "price": 50,
+		 "unit": "gms",
+         "unitVal": "150",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  
+	  
+	  
+	  {
+         "id": "69",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "DHASHAMOOLAM",
+         "desc": "DHASHAMOOLAM",
+		 "price": 140,
+		 "unit": "bottle",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	   {
+         "id": "70",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "PANKAJ KASTHURI 200GM",
+         "desc": "PANKAJ KASTHURI 200GM",
+		 "price": 160,
+		 "unit": "gms",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "71",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "PANKAJ KASTHURI 400GM",
+         "desc": "PANKAJ KASTHURI 400GM",
+		 "price": 300,
+		 "unit": "gms",
+         "unitVal": "400",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "72",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "ELADI CANDY 200PC",
+         "desc": "ELADI CANDY 200PC",
+		 "price": 200,
+		 "unit": "bottle",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "73",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "JAGGERY(VELLAM)-1kg",
+         "desc": "JAGGERY(VELLAM)-1kg",
+		 "price": 100,
+		 "unit": "kg",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "74",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "KODUMPULI-1kg",
+         "desc": "KODUMPULI-1kg",
+		 "price": 300,
+		 "unit": "kg",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "75",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "MALABAR COFFEE(100GM)",
+         "desc": "MALABAR COFFEE(100GM)",
+		 "price": 46,
+		 "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "76",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "VANPAYERE 1KG",
+         "desc": "VANPAYERE 1KG",
+		 "price": 120,
+		 "unit": "kg",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "77",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "MUTHIRA(HORSE GRAM)",
+         "desc": "MUTHIRA(HORSE GRAM)",
+		 "price": 110,
+		 "unit": "kg",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "78",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "PAPADAM 15",
+         "desc": "PAPADAM 15",
+		 "price": 15,
+		 "unit": "packet",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "79",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "BLACK TILL LADU",
+         "desc": "BLACK TILL LADU",
+		 "price": 30,
+		 "unit": "packet",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "80",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "AMPAPADI",
+         "desc": "AMPAPADI",
+		 "price": 30,
+		 "unit": "packet",
+         "unitVal": "1",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "81",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "BANARICH 100GM(BABYFOOD)",
+         "desc": "BANARICH 100GM(BABYFOOD)",
+		 "price": 96,
+		 "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "82",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "BANARICH 200GM (BABY FOOD)",
+         "desc": "BANARICH 200GM (BABY FOOD)",
+		 "price": 175,
+		 "unit": "gms",
+         "unitVal": "200",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "83",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "NAMBOOTHIRI PASTE 100GM",
+         "desc": "NAMBOOTHIRI PASTE 100GM",
+		 "price": 50,
+		 "unit": "gms",
+         "unitVal": "100",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "84",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "NAMBOOTHIRI PASTE 150GM",
+         "desc": "NAMBOOTHIRI PASTE 150GM",
+		 "price": 75,
+		 "unit": "gms",
+         "unitVal": "150",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "85",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "NAMBOOTHIRI POWDER 40GM",
+         "desc": "NAMBOOTHIRI POWDER 40GM",
+		 "price": 28,
+		 "unit": "gms",
+         "unitVal": "40",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  {
+         "id": "85",
+         "tags":[""],
+         "categoryId": "7", 
+         "name": "NAMBOOTHIRI POWDER 80GM",
+         "desc": "NAMBOOTHIRI POWDER 80GM",
+		 "price": 48,
+		 "unit": "gms",
+         "unitVal": "80",
+         "image": "",
+		 "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+      },
+	  
+	  
+	  
+	  {
+       "id": "86",
+       "categoryId": "8", 
+       "tags":["popular"],
+       "name": "SMALL ONIONS",
+       "desc": "SHALLOTS: ADD THAT FLAVOUR TO YOUR FOOD",
+       "price": 30,
+       "unit": "GRAM",
+       "unitVal": "250",
+       "image": "",
+	   "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+    },
+	{
+       "id": "87",
+       "categoryId": "8", 
+       "tags":["popular"],
+       "name": "NENDRA PAYAM(BANANA)",
+       "desc": "NENDRA PAYAM(BANANA)",
+       "price": 45,
+       "unit": "GRAM",
+       "unitVal": "500",
+       "image": "",
+	   "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+    },
+	{
+       "id": "88",
+       "categoryId": "8", 
+       "tags":["popular"],
+       "name": "ELACHI BANANA(KATHALI)",
+       "desc": "ELACHI BANANA(KATHALI)",
+       "price": 50,
+       "unit": "GRAM",
+       "unitVal": "500",
+       "image": "",
+	   "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+    },
+	{
+       "id": "89",
+       "categoryId": "8", 
+       "tags":["popular"],
+       "name": "KAPPA",
+       "desc": "KAPPA",
+       "price": 15,
+       "unit": "GRAM",
+       "unitVal": "250",
+       "image": "",
+	   "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+    },
+	{
+       "id": "90",
+       "categoryId": "8", 
+       "tags":["popular"],
+       "name": "CHEMB/SURAN",
+       "desc": "CHEMB/SURAN",
+       "price": 45,
+       "unit": "GRAM",
+       "unitVal": "500",
+       "image": "",
+	   "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+    },
+	{
+       "id": "91",
+       "categoryId": "8", 
+       "tags":["popular"],
+       "name": "KURKA",
+       "desc": "KURKA",
+       "price": 20,
+       "unit": "GRAM",
+       "unitVal": "250",
+       "image": "",
+	   "qty": {
+          "increment": 1,
+          "initialQty": 0
+		  }
+    }
+	  
+	  
+ ]

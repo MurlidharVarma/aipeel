@@ -73,17 +73,20 @@ export class CheckOutComponent implements OnInit {
         totalPrice: this.totalPrice
       }
       let textMessage = this.generateOrderMessage(order);
+      this.router.navigate(['/gratitude']);
       window.location.href = `https://api.whatsapp.com/send?phone=${CONFIG_OBJ.phone}&text=${textMessage}`;
     }
   }
 
   generateOrderMessage(order: Order){
+    let orderDate = new Date().toLocaleString();
     let textMessage:string[] = [
                                   `---------------------------`,
                                   `Order Id: ${order.orderId}`,
                                   `Order By: ${order.orderBy}`,
-                                  `Phone   : ${order.phone}`,
-                                  `Email   : ${order.email}`,
+                                  `Order Date: ${orderDate}`,
+                                  // `Phone   : ${order.phone}`,
+                                  // `Email   : ${order.email}`,
                                   ` `,
                                   `Address : ${order.address}`,
                                   `---------------------------`

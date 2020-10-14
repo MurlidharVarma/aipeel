@@ -1,42 +1,42 @@
 [
    {
       "categoryId": "1",
-      "name": "Rice & Products",
-      "image": "assets/images/rice&products.jpg"
+      "name": "Rice Products",
+      "image": "https://unsplash.com/photos/-LdilhDx3sk"
    },
    {
       "categoryId": "2",
       "name": "Instant Mix",
-      "image": "assets/images/instantmix.jpg"
+      "image": "https://unsplash.com/photos/eDj-bODzFx8"
    },
    {
       "categoryId": "3",
       "name": "Masala",
-      "image": "assets/images/masalas.jpg"
+      "image": "https://unsplash.com/photos/e9dULuKmZTA"
    },
    {
       "categoryId": "4",
       "name": "Pickles",
-      "image": "assets/images/pickles.jpg"
+      "image": "https://unsplash.com/photos/-IiCuSVFJXA"
    },
    {
       "categoryId": "5",
       "name": "Cooking Oils & Ghee",
-      "image": "assets/images/cookingoils.jpeg"
+      "image": "https://unsplash.com/photos/xhOUnxVVb6s"
    },
    {
       "categoryId": "6",
       "name": "Sweets & Snacks",
-      "image": "assets/images/snacks.jpg"
+      "image": "https://unsplash.com/photos/ONQ86GlHs3c"
    },
    {
       "categoryId": "7",
       "name": "Other Products",
-      "image": "assets/images/otherproducts.jpg"
+      "image": "https://unsplash.com/photos/SCbq6uKCyMY"
    },
    {
       "categoryId": "8",
       "name": "Vegetables",
-      "image": "assets/images/vegetables.jpg"
+      "image": "https://unsplash.com/photos/5aJVJvJ9rG8"
    }
 ]

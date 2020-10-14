@@ -1,0 +1,27 @@
+[
+    {
+       "categoryId": "1",
+       "name": "Vegetable",
+       "image": "https://images.unsplash.com/photo-1518843875459-f738682238a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1626&q=80"
+    },
+    {
+       "categoryId": "2",
+       "name": "Fruits",
+       "image": "https://images.unsplash.com/photo-1600626333392-59a20e646d97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+    },
+    {
+       "categoryId": "3",
+       "name": "Snacks",
+       "image": "https://images.unsplash.com/photo-1598401575995-dcdbbebe55b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+    },
+    {
+       "categoryId": "4",
+       "name": "Masala",
+       "image": "https://images.unsplash.com/photo-1509358271058-acd22cc93898?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+    },
+    {
+       "categoryId": "5",
+       "name": "Grains",
+       "image": "https://images.unsplash.com/photo-1562525922-cde78e2119f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+    }
+ ]
