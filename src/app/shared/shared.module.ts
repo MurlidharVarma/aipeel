@@ -20,6 +20,7 @@ import { MyAccountComponent } from './components/my-account/my-account.component
 import { ContactComponent } from './components/contact/contact.component';
 import { NameComponent } from './components/name/name.component';
 import { GratitudeComponent } from './components/gratitude/gratitude.component';
+import { HomeSliderComponent } from './components/home-slider/home-slider.component';
 
 
 
@@ -40,7 +41,8 @@ import { GratitudeComponent } from './components/gratitude/gratitude.component';
     MyAccountComponent,
     ContactComponent,
     NameComponent,
-    GratitudeComponent
+    GratitudeComponent,
+    HomeSliderComponent
   ],
   imports: [
     CommonModule,
@@ -48,7 +50,7 @@ import { GratitudeComponent } from './components/gratitude/gratitude.component';
     FormsModule,
     ReactiveFormsModule,
     IonicModule,
-    IonicStorageModule
+    IonicStorageModule,
   ],
   exports:[
     ItemCardComponent, 
@@ -66,7 +68,8 @@ import { GratitudeComponent } from './components/gratitude/gratitude.component';
     MyAccountComponent,
     ContactComponent,
     NameComponent,
-    GratitudeComponent
+    GratitudeComponent,
+    HomeSliderComponent
   ],
 })
 export class SharedModule { }

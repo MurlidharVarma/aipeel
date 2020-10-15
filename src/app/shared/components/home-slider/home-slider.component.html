@@ -1,0 +1,43 @@
+  <!-- <ion-slides pager="true" [options]="slideOpts" >
+    <ion-slide *ngFor="let slide of slides">
+      <div class="slider-container" [style]="'background-image: url(' + slide.image + ')'"></div>
+    </ion-slide> 
+  </ion-slides> -->
+
+  <ion-slides pager="true" #mySlider [options]="slideOpts"  (ionSlidesDidLoad)="slidesDidLoad(mySlider)">
+    <ion-slide>
+      <div class="slider-image-full bottom-end  " style="background-position: 10% 30%;background-image: url('./assets/slides/Home3.jpg')">
+        <div class="text" style="font-size:1.4em; color: white; font-weight: bold; text-align: left;line-height: 1.4em; background-color: rgba(46, 49, 49, 0.3);">Straight from GOD's own country to your home</div>
+      </div>
+    </ion-slide> 
+
+    <ion-slide>
+      <div class="slider-image-full bottom-start" style="background-position: 10% 30%;background-image: url('./assets/slides/Home1.jpg')">
+        <div class="text" style="font-size:1.4em; color: white; font-weight: bold; text-align: left;line-height: 1.4em;">Ende Keralam, <br>Ethere Sundaram!</div>
+      </div>
+    </ion-slide> 
+
+    <ion-slide>
+      <div class="slider-image-full bottom-start" style="background-position: 10% 50%;background-image: url('./assets/slides/Home2.jpg')">
+          <div class="text" style="font-size:1.4em; color: white; font-weight: bold; text-align: center;line-height: 1.4em; background-color: rgba(46, 49, 49, 0.5);">Massive discounts on MRP. Hurry Up!</div>
+      </div>
+    </ion-slide> 
+
+    <ion-slide>
+      <div class="slider-image-full center-col-flow" style="background-position: 10% 45%;background-image: url('./assets/slides/Home4.jpg')">
+          <div class="text" style="font-size:1.4em; color: white; font-weight: bold; text-align: center;line-height: 1.4em; background-color: rgba(46, 49, 49, 0.5);">Now serving only Thane location!</div>
+      </div>
+    </ion-slide> 
+
+    <!-- <ion-slide>
+      <div class="slider-image-full center-col-flow" style="background-position: 10% 45%;background-image: url('./assets/slides/Home7.jpg')">
+      </div>
+    </ion-slide>  -->
+
+    <!-- <ion-slide *ngFor="let slide of slides; let idx = index" class="slider-item-container" [style.background]="slide.backgroundColor" [style.flexDirection]="'row'+(idx%2==0?'-reverse':'')">
+        <div class="slider-image" [style]="'background-image: url(' + slide.image + ')'"></div>
+        <div class="pane">
+          <div class="text" [style.fontSize]="slide.textSize" [style.color]="slide.textColor">{{slide.text}}</div>
+        </div>
+    </ion-slide>  -->
+  </ion-slides>
