@@ -28,7 +28,7 @@
 
       <span class="column-flow qty-container">
         <ion-text class="quantity-label">Quantity</ion-text>
-        <app-item-quantity [qty]="qty" [increment]="item?.qty?.increment" [initialQty]="item?.qty?.initialQty" (updateQty)="updateQuantity($event)"></app-item-quantity> 
+        <app-item-quantity [qty]="qty" [increment]="item?.qty_increment" [initialQty]="item?.qty_initialQty" (updateQty)="updateQuantity($event)"></app-item-quantity> 
       </span>
       <ion-text class="totalPrice">Total: {{totalPrice | currency}}</ion-text>
     </ion-card-content>
