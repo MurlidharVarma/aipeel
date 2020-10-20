@@ -1,7 +1,8 @@
 export interface Item{
     id: string,
     categoryId: string,
-    tags: Array<string>,
+    isHotDeal?: boolean,
+    isPopular?: boolean,
     name: string;
     category?: string,
     price: number;
@@ -10,8 +11,6 @@ export interface Item{
     unitVal?: number,
     image: string;
     desc:string;
-    qty?: {
-        increment?: number,
-        initialQty?: number
-    }
+    qty_increment?: number,
+    qty_initialQty?: number
 }

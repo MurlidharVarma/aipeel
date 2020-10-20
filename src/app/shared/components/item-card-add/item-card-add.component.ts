@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CartService } from 'src/app/cart.service';
+import { environment } from 'src/environments/environment';
 import { CartItem } from '../../models/cart-item';
 import { Item } from '../../models/item.model';
 
@@ -17,7 +18,9 @@ export class ItemCardAddComponent implements OnInit {
   qty: number;
   totalPrice: number;
   
+  imagePrefix: string;
   constructor(private router: Router, private cartService: CartService) { 
+    this.imagePrefix = environment.imagePrefix;
   }
 
   ngOnInit() {

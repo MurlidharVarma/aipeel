@@ -3,6 +3,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CartService } from 'src/app/cart.service';
 import { CONFIG_OBJ } from 'src/app/config';
+import { environment } from 'src/environments/environment';
 import { CartItem } from '../../models/cart-item';
 import { Item } from '../../models/item.model';
 
@@ -21,13 +22,16 @@ export class ItemDetailComponent implements OnInit {
   totalPrice: number = 0;
   savePrice: number = 0;
 
+  imagePrefix: string;
+
   constructor(private route: ActivatedRoute, private router: Router, private cartService: CartService) {
     this.appName = CONFIG_OBJ.appName;
+    this.imagePrefix = environment.imagePrefix;
   }
 
   ngOnInit() {
     this.item = history.state;
-    if(this.item.actualprice && this.item.actualprice>0){
+    if(this.item.actualprice && this.item.actualprice!=null && this.item.actualprice>0){
       this.savePrice = this.item.actualprice - this.item.price;
     }
     let cartItem: CartItem = this.cartService.getCartItemByItemId(this.item.id);

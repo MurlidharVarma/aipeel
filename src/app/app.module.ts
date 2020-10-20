@@ -12,6 +12,9 @@ import { SharedModule } from './shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IonicStorageModule } from '@ionic/storage';
 import { CONFIG_OBJ } from './config';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { CONFIG_OBJ } from './config';
     ReactiveFormsModule,
     IonicStorageModule.forRoot({
       name: `__${CONFIG_OBJ.appName.toLowerCase()}`,
-    })
+    }),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [
     StatusBar,

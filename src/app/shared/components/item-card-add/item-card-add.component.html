@@ -1,6 +1,6 @@
 <ion-card class="card-container">
   <ion-item class="row-flow" lines="none">
-    <div slot="start" class="image-style" [style.backgroundImage]="'url('+item.image+')'">
+    <div slot="start" class="image-style" [style.backgroundImage]="'url('+imagePrefix+item.image+')'">
       <ion-icon *ngIf="qty>0" class="selected" [ios]="'checkmark-circle-outline'" [md]="'checkmark-circle-sharp'" color="success"></ion-icon>
     </div>
     <div class="column-flow">
@@ -13,7 +13,7 @@
     </div>
     <div class="column-center-flow qty"  slot="end" >
         <ion-text class="unit">Quantity</ion-text>
-        <app-item-quantity [qty]="qty" [increment]="item?.qty?.increment" [initialQty]="item?.qty?.initialQty" (updateQty)="updateQuantity($event)"></app-item-quantity> 
+        <app-item-quantity [qty]="qty" [increment]="item?.qty_increment" [initialQty]="item?.qty_initialQty" (updateQty)="updateQuantity($event)"></app-item-quantity> 
         <span class="totalPrice">
           <ion-text *ngIf="totalPrice > 0">Total: {{totalPrice | currency}}</ion-text>
         </span>

@@ -1,42 +1,42 @@
 [
-   {
-      "categoryId": "1",
-      "name": "Rice & Products",
-      "image": "assets/images/rice&products.jpg"
-   },
-   {
-      "categoryId": "2",
-      "name": "Instant Mix",
-      "image": "assets/images/instantmix.jpg"
-   },
-   {
-      "categoryId": "3",
-      "name": "Masala",
-      "image": "assets/images/masalas.jpg"
-   },
-   {
-      "categoryId": "4",
-      "name": "Pickles",
-      "image": "assets/images/pickles.jpg"
-   },
-   {
-      "categoryId": "5",
-      "name": "Cooking Oils & Ghee",
-      "image": "assets/images/cookingoils.jpeg"
-   },
-   {
-      "categoryId": "6",
-      "name": "Sweets & Snacks",
-      "image": "assets/images/snacks.jpg"
-   },
-   {
-      "categoryId": "7",
-      "name": "Other Products",
-      "image": "assets/images/otherproducts.jpg"
-   },
-   {
-      "categoryId": "8",
-      "name": "Vegetables",
-      "image": "assets/images/vegetables.jpg"
-   }
+    {
+        "categoryId": "1",
+        "name": "Rice & Products",
+        "image": "rice&products.jpg"
+    },
+    {
+        "categoryId": "2",
+        "name": "Instant Mix",
+        "image": "instantmix.jpg"
+    },
+    {
+        "categoryId": "3",
+        "name": "Masala",
+        "image": "masalas.jpg"
+    },
+    {
+        "categoryId": "4",
+        "name": "Pickles",
+        "image": "pickles.jpg"
+    },
+    {
+        "categoryId": "5",
+        "name": "Cooking Oils & Ghee",
+        "image": "cookingoils.jpeg"
+    },
+    {
+        "categoryId": "6",
+        "name": "Sweets & Snacks",
+        "image": "snacks.jpg"
+    },
+    {
+        "categoryId": "7",
+        "name": "Other Products",
+        "image": "otherproducts.jpg"
+    },
+    {
+        "categoryId": "8",
+        "name": "Vegetables",
+        "image": "vegetables.jpg"
+    }
 ]

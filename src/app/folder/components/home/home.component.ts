@@ -3,6 +3,7 @@ import { Category } from 'src/app/shared/models/category.model';
 import { ItemList } from 'src/app/shared/models/item-listing.model';
 import { Item } from '../../../shared/models/item.model';
 import { AppService } from '../../../app.service';
+import { FireService } from 'src/app/fire.service';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,29 @@ export class HomeComponent implements OnInit {
   topProducts: ItemList;
   dealProducts: ItemList;
 
-  constructor(private appService: AppService) {
+  // constructor(private appService: FireService){
+  //   this.appService.getDealItems().subscribe((dealProducts:Item[]) => {
+  //     this.dealProducts = {
+  //       sectionName: "Deal of the Day",
+  //       items: dealProducts
+  //     };
+  //   });
+
+  //   this.appService.getPopularItems().subscribe((topProducts:Item[]) => {
+  //     this.topProducts = {
+  //       sectionName: "Top Products",
+  //       items: topProducts
+  //     }
+  //   });
+
+  //   this.appService.getAllCategories().subscribe(data => {
+  //     this.categoryList = {
+  //         sectionName: "Shop by Category",
+  //         categories: data
+  //       }
+  //   });
+  // }
+  constructor(private appService: FireService) {
     this.appService.getDealItems().subscribe((dealProducts:Item[]) => {
       this.dealProducts = {
         sectionName: "Deal of the Day",

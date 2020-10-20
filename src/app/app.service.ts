@@ -21,7 +21,7 @@ export class AppService {
   getPopularItems(): Observable<Item[]>{
     return this.http.get<Item[]>("assets/mocks/items.mock.json").pipe(
       map(data =>{
-        return _.filter(data, e => e['tags'].indexOf("popular") != -1);
+        return _.filter(data, e => e.isPopular);
       })
     )
   }
@@ -29,7 +29,7 @@ export class AppService {
   getDealItems(): Observable<Item[]>{
       return this.http.get<Item[]>("assets/mocks/items.mock.json").pipe(
         map(data =>{
-          return _.filter(data, e => e['tags'].indexOf("deal") != -1);
+          return _.filter(data, e => e.isHotDeal);
         })
       )
   }
