@@ -1,3 +1,8 @@
-<div class="center">
-    <div class="logo">
-</div>
+<span class="center">
+    <span class="logo">
+</span>
+
+<span class="right" *ngIf="loginService.isLoggedIn">
+    <span [style.background-image]="'url('+user.photoURL+')'" class="profilePic"></span>
+    <span>{{user.displayName}}</span>
+</span>

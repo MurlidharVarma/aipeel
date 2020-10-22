@@ -12,6 +12,27 @@
               <ion-label>{{ p.title }}</ion-label>
             </ion-item>
           </ion-menu-toggle>
+          
+          <ion-menu-toggle *ngIf="loginService.isLoggedIn && id=='A4nOa6rPYfTci86v3gdShxlLaPx1'" auto-hide="false" style="cursor: pointer;">
+            <ion-item (click)="settings()"  lines="none" detail="false"> 
+              <ion-icon slot="start" [ios]="'settings-outline'" [md]="'settings-sharp'"></ion-icon>
+              <ion-label>Settings</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle *ngIf="!loginService.isLoggedIn" auto-hide="false" style="cursor: pointer;">
+            <ion-item (click)="loginUser()"  lines="none" detail="false"> 
+              <ion-icon slot="start" [ios]="'person-outline'" [md]="'person-sharp'"></ion-icon>
+              <ion-label color="success">Login</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle *ngIf="loginService.isLoggedIn" auto-hide="false" style="cursor: pointer;">
+            <ion-item (click)="logoutUser()"  lines="none" detail="false"> 
+              <ion-icon slot="start" [ios]="'person-outline'" [md]="'person-sharp'"></ion-icon>
+              <ion-label color="danger">Logout</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
         </ion-list>
 
         <!-- <ion-list id="labels-list">

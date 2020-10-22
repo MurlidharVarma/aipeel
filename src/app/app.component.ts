@@ -3,6 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { LoginService } from './login.service';
+import { User } from './user.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -39,13 +42,26 @@ export class AppComponent implements OnInit {
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-
+  user: User;
+  id: string;
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    private loginService: LoginService,
+    private router: Router
   ) {
     this.initializeApp();
+    this.loginService.user$.subscribe(user => {
+      if(user && user!=null){
+        this.user = user;
+        this.id = user.getId();
+        console.log("id",this.id);
+      }else{
+        this.user = null;
+        this.id = null;
+      }
+    })
   }
 
   initializeApp() {
@@ -60,5 +76,15 @@ export class AppComponent implements OnInit {
     if (path !== undefined) {
       this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
     }
+  }
+
+  loginUser(){
+    this.loginService.login();
+  }
+  logoutUser(){
+    this.loginService.signOut();
+  }
+  settings(){
+    this.router.navigate(["/cfg/manage"])
   }
 }

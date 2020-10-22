@@ -18,6 +18,11 @@ const routes: Routes = [
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
   {
+    path: 'cfg',
+    canActivateChild: [],
+    loadChildren: () => import('./cfg/cfg.module').then( m => m.CfgModule)
+  },
+  {
     path: 'itemDetails/:id',
     component: ItemDetailComponent
   },
