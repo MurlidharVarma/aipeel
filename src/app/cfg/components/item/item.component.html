@@ -1,0 +1,7 @@
+<ion-item class="item-container">
+  <ion-label slot="start"></ion-label>
+  <ion-label>{{item.name}} ({{item.unitVal}} {{item.unit}})</ion-label>
+  <span slot="end" style="width: 80px; display: flex; flex-direction: row;justify-content: flex-start;align-items: center;">
+    Rs. <ion-input class="inp" type="number" [(ngModel)]="item.price" required min-length="1" (ionBlur)="savePrice($event)"></ion-input>
+  </span>
+</ion-item>

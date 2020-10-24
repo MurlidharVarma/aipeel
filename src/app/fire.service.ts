@@ -5,6 +5,7 @@ import { map } from 'rxjs/operators';
 import { Category } from './shared/models/category.model';
 import { Item } from './shared/models/item.model';
 import * as _ from 'underscore';
+import { Order } from './shared/models/order';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +15,12 @@ export class FireService {
   items$: BehaviorSubject<Item[]> = new BehaviorSubject<Item[]>(null);
 
   constructor(private firestore: AngularFirestore) {
+    this.initialize();
+  }
+
+  /***********************FIRE STORE - START *****************/
+
+  initialize(){
     this.getAllCategoriesFromFB().subscribe((data:Category[]) => {
       this.categories$.next(data);
     });
@@ -23,8 +30,6 @@ export class FireService {
     })
   }
 
-  /***********************FIRE STORE - START *****************/
-
   getAllCategoriesFromFB(): Observable<Category[]>{
     return this.firestore.collection<Category>("categories").valueChanges();
   }
@@ -33,6 +38,17 @@ export class FireService {
     return this.firestore.collection<Item>("items").valueChanges();
   }
 
+  saveOrder(order: Order){
+    return this.firestore.collection("orders").doc(order.orderId).set(order, {merge: true});
+  }
+
+  saveAccount(acc){
+    return this.firestore.collection("account").doc(acc.email).set(acc, {merge: true});
+  }
+
+  getAccountInfo(email){
+    return this.firestore.collection("account").doc(email).valueChanges();
+  }
   /***********************FIRE STORE - END *****************/
 
   getAllCategories(): Observable<Category[]>{
@@ -62,4 +78,5 @@ export class FireService {
       })
     )
   }
+
 }

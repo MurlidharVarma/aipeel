@@ -11,6 +11,7 @@ import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppService } from '../app.service';
+import { FireService } from '../fire.service';
 
 @NgModule({
   imports: [
@@ -26,7 +27,7 @@ import { AppService } from '../app.service';
     HomeComponent
   ],
   providers:[
-    AppService
+    FireService
   ]
 })
 export class FolderPageModule {}

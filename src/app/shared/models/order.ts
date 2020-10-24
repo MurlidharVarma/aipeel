@@ -1,7 +1,7 @@
 import { CartItem } from './cart-item';
 
 export interface Order{
-    orderId?: string,
+    orderId: string,
     address: string,
     phone: number,
     email: string,

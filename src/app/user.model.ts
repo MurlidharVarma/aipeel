@@ -16,6 +16,18 @@ export class User{
         return this.uid;
     }
 
+    getDisplayName(){
+        return this.displayName;
+    }
+
+    getEmail(){
+        return this.email;
+    }
+
+    getPhotoURL(){
+        return this.photoURL;
+    }
+
     isAuthorized(){
         return this.uid == "A4nOa6rPYfTci86v3gdShxlLaPx1";
     }

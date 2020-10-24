@@ -4,6 +4,7 @@ import { CONFIG_OBJ } from '../../../config';
 import { AppService } from '../../../app.service';
 import { Category } from '../../models/category.model';
 import { Item } from '../../models/item.model';
+import { FireService } from 'src/app/fire.service';
 
 @Component({
   selector: 'app-category-item-detail',
@@ -16,7 +17,7 @@ export class CategoryItemDetailComponent implements OnInit {
   category: Category;
   items: Item[];
   
-  constructor(private route: ActivatedRoute, private router: Router, private appService: AppService) {
+  constructor(private route: ActivatedRoute, private router: Router, private appService: FireService) {
     this.appName = CONFIG_OBJ.appName;
   }
 

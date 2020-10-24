@@ -10,11 +10,12 @@ import { User } from 'src/app/user.model';
 export class NameComponent implements OnInit {
 
   user: User;
+  isLoggedIn: boolean;
 
   constructor(private loginService: LoginService) {
     this.loginService.user$.subscribe(user =>{
       this.user = user;
-      console.log(user);
+      this.isLoggedIn = this.loginService.isLoggedIn;
     })
   }
 

@@ -22,10 +22,10 @@ export class LoginService {
       const creds = await this.fireAuth.signInWithPopup(provider);
   
       const result = await this.updateUserData(creds.user);
+      this.isLoggedIn = true;
       this.user$.next(new User(creds.user));
       // let result = null;
       // this.user$.next(new User({uid: "A4nOa6rPYfTci86v3gdShxlLaPx1", email: "kerabazaar07@gmail.com", displayName: "Kerala Bazaar", photoURL: "https://lh3.googleusercontent.com/-bDZ259orEQE/AAA…MZuucmYIUC987AkTmPhHzqmHkKn7uWJOA/s96-c/photo.jpg"}))
-      this.isLoggedIn = true;
       return result;
     }catch(err){
       console.error(err);

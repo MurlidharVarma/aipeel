@@ -6,6 +6,10 @@ import { CheckOutComponent } from './shared/components/check-out/check-out.compo
 import { MyAccountComponent } from './shared/components/my-account/my-account.component';
 import { ContactComponent } from './shared/components/contact/contact.component';
 import { GratitudeComponent } from './shared/components/gratitude/gratitude.component';
+import { AuthGuard } from './auth.guard';
+import { LoginService } from './login.service';
+import { LoginGuard } from './login.guard';
+import { MyAccountGuard } from './my-account.guard';
 
 const routes: Routes = [
   {
@@ -19,7 +23,7 @@ const routes: Routes = [
   },
   {
     path: 'cfg',
-    canActivateChild: [],
+    canActivate: [AuthGuard],
     loadChildren: () => import('./cfg/cfg.module').then( m => m.CfgModule)
   },
   {
@@ -36,6 +40,7 @@ const routes: Routes = [
   },
   {
     path: 'myaccount',
+    canActivate: [MyAccountGuard],
     component: MyAccountComponent
   },
   {

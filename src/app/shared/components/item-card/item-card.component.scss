@@ -39,10 +39,13 @@
     align-items: flex-start;
 }
 .header{
-    font-size: 0.95rem;
+    font-size: 0.90rem;
     font-weight: 400;
     color: var(--ion-color-primary);
     text-transform: capitalize !important;
+    max-height: 2em;
+    line-height: 1em;
+    text-align: left;
     // text-overflow: ellipsis;
     // white-space: nowrap;
     // overflow: hidden;
@@ -54,11 +57,15 @@
     font-size: 0.8rem;
     bottom: 0px;
     right: 10px;
+    margin-top: 10px;
 }
 
 .unit{
-    font-size: 0.75rem;
+    font-size: 0.75em;
     color: var(--ion-color-info);
+    margin:5px 0px;
+    height: 1em;
+    line-height: 1em;
 }
 
 .actualPrice{

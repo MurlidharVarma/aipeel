@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="goBack()">
+      <ion-icon [ios]="'arrow-back-outline'" [md]="'arrow-back-sharp'" color="primary" style="font-size: 2rem;"></ion-icon>
+    </ion-buttons>
+    <app-name></app-name>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-searchbar [formControl]="searchTxt" showCancelButton="focus"></ion-searchbar>
+
+  <ng-container *ngFor="let item of items">
+    <app-item [item]="item"></app-item>
+  </ng-container>
+
+</ion-content>
+
+<ion-content *ngIf="!(items && items!=null && items.length>0)" class="center-flow" lines="none">
+  <span style="width: 100%">
+    No items found
+  </span>
+</ion-content>
+

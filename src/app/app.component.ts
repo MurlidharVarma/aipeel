@@ -44,6 +44,8 @@ export class AppComponent implements OnInit {
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   user: User;
   id: string;
+  isLoggedIn: boolean;
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -56,11 +58,11 @@ export class AppComponent implements OnInit {
       if(user && user!=null){
         this.user = user;
         this.id = user.getId();
-        console.log("id",this.id);
       }else{
         this.user = null;
         this.id = null;
       }
+      this.isLoggedIn = this.loginService.isLoggedIn;
     })
   }
 

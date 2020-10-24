@@ -117,3 +117,15 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+
+.kb-menu{
+  --width: 200px;
+}
+
+.kb-split-menu{
+  --side-width: 200px;
+}
+
+.note{
+  font-size: 0.8em;
+}
