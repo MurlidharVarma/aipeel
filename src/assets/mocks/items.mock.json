@@ -1,4 +1,18 @@
 [
+	{
+        "actualprice": null,
+        "categoryId": "1",
+        "desc": "Kerala Tamrind",
+        "image": "tamrind.jpg",
+        "isHotDeal": false,
+        "isPopular": false,
+        "name": "Tamrind",
+        "price": 55,
+        "qty_increment": 1,
+        "qty_initalQty": 0,
+        "unit": "gms",
+        "unitVal": "250"
+    },
     {
         "actualprice": 350,
         "categoryId": "1",

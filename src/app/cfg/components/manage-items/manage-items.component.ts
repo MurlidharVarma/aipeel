@@ -41,7 +41,7 @@ export class ManageItemsComponent implements OnInit, OnDestroy {
   }
 
   setItems(items: Item[]){
-    this.items = _.sortBy(items,'name');
+    this.items = _.sortBy(items,'id');
     this.originalItems = [...items];
   }
 

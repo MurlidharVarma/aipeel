@@ -7,7 +7,7 @@ import { CONFIG_OBJ } from 'src/app/config';
 import { FireService } from 'src/app/fire.service';
 import { CartItem } from '../../models/cart-item';
 import { Order } from '../../models/order';
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 import { User } from 'src/app/user.model';
 import { LoginService } from 'src/app/login.service';
 
@@ -82,7 +82,8 @@ export class CheckOutComponent implements OnInit {
         this.storage.set("contact", contact);
       }
 
-      let orderId: string = uuidv4();
+      let orderId: string = ""+Date.now();
+      // let orderId: string = uuidv4();
 
       let order: Order = {
         orderId: orderId,

@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
   constructor(private appService: FireService) {
     this.appService.getDealItems().subscribe((dealProducts:Item[]) => {
       this.dealProducts = {
-        sectionName: "Deal of the Day",
+        sectionName: "Hot Deals",
         items: dealProducts
       };
     });
