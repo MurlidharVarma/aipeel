@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
   items: Item[];
   originalItems: Item[];
 
-  constructor(private appService: FireService) {
+  constructor(private appService: AppService) {
     this.itemSearchTxt = new FormControl();
 
     this.itemSearchTxt.valueChanges.pipe(

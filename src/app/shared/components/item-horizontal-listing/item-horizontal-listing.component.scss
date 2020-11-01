@@ -1,7 +1,9 @@
 .segment-container{
-    background: transparent! important;
+    background: var(--site-background)! important;
+    padding-bottom: 20px;
 }
 
 h2{
     padding: 5px 10px;
+    margin: 0px;
 }

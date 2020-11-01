@@ -3,14 +3,35 @@
 }
 .searchBar{
     background-color: white;
-    z-index: 1;
+    z-index: 10;
 }
 .banner{
-    background-color: lightgreen;
-    color: darkgreen;
+    background-image: url(../../../../assets/slides/sharing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 50%;
+    padding:0px;
+    margin: 0px;
+    
+    height: 30vh;
+    min-width: 40vw;
+
+
+    color: white;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    padding: 10px 5px;
+    padding: 20px 5px;
+}
+
+.banner-text{
+    font-size:1.4em; 
+    color: white; 
+    font-weight: bold; 
+    text-align: center;
+    line-height: 1.4em; 
+    background-color: rgba(46, 49, 49, 0.5);
+    padding: 10px;
+    border-radius: 5px;
 }

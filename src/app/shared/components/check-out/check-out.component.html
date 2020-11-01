@@ -7,15 +7,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content *ngIf="items!=null && items.length>0" [fullscreen]="true">
-  <ion-text> 
-    <h2 style="margin-left: 20px;">My Cart</h2>
+<ion-content *ngIf="items!=null && items.length>0" [fullscreen]="true" class="site-background">
+  <ion-text style="text-align: center;"> 
+    <h2 style="margin: 0px;">My Cart</h2>
   </ion-text>
-  <ion-list>
+  <ion-list class="site-background">
     <app-checkout-cart-item [item]="cartItem" *ngFor="let cartItem of items"></app-checkout-cart-item>
   </ion-list>
 
-  <ion-card>
+  <ion-card class="card-shadow">
     <form [formGroup]="contactForm" novalidate>
     <ion-card-header>
       <ion-card-subtitle color="primary">Deliver To</ion-card-subtitle>
@@ -59,9 +59,9 @@
 
 </ion-content>
 
-<ion-content *ngIf="!(items && items!=null && items.length>0)" [fullscreen]="true" >
+<ion-content *ngIf="!(items && items!=null && items.length>0)" [fullscreen]="true" class="site-background">
   <ion-text> 
     <h2 style="margin-left: 20px;">My Cart</h2>
   </ion-text>
-      <div style="height: 80vh" class="row-center-flow">No items in cart</div>
+      <div style="height: 80vh" class="row-center-flow site-background">No items in cart</div>
 </ion-content>
