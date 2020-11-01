@@ -1,0 +1,97 @@
+.slider-image{
+    height: 30vh;
+    min-width: 40vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:0px;
+    margin: 0px;
+}
+
+.slider-image-full{
+    height: 25vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:0px;
+    margin: 0px;
+}
+
+.center-col-flow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-item-container{
+    background-color: var(--ion-color-primary);
+    display: flex;
+    // flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px;
+    margin: 0px;
+    position: relative;
+}
+
+.text{
+    padding: 10px;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 0.1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: block;
+    font-size: 1.2em;
+    line-height: 1.1em; /* a */
+    max-height: 6em; /* a x number of line to show (ex : 2 line)  */
+}
+
+.pane{
+    width: 100%;
+}
+
+
+.center-row-flow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-center-col-flow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start !important;
+}
+
+.bottom-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end !important;
+    align-items: flex-start !important;
+}
+
+.bottom-end{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end !important;
+    align-items: center !important;
+}
+
+.top-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: center !important;
+}
+
+.bottom-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end !important;
+    align-items: center !important;
+}

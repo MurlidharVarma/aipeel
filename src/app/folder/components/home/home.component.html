@@ -1,4 +1,14 @@
+<ion-searchbar [formControl]="itemSearchTxt" showCancelButton="focus" placeholder="Search products" class="searchBar"></ion-searchbar>
+<ng-container *ngIf="items == null">
     <app-home-slider></app-home-slider>
     <app-item-horizontal-listing [items]="topProducts"></app-item-horizontal-listing>
+    <div class="banner">
+        <ion-text>Discounts upto 20% on Products</ion-text>
+    </div>
     <app-item-horizontal-listing [items]="dealProducts"></app-item-horizontal-listing>
     <app-category-item-listing [categories]="categoryList"></app-category-item-listing>
+    <app-banner></app-banner>
+</ng-container>
+<ng-container *ngIf="items != null">
+    <app-search-item [items]="items"></app-search-item>
+</ng-container>

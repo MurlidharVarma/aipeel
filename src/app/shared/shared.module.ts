@@ -20,6 +20,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NameComponent } from './components/name/name.component';
 import { GratitudeComponent } from './components/gratitude/gratitude.component';
 import { HomeSliderComponent } from './components/home-slider/home-slider.component';
+import { SearchItemComponent } from './components/search-item/search-item.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 
 
@@ -40,7 +42,9 @@ import { HomeSliderComponent } from './components/home-slider/home-slider.compon
     ContactComponent,
     NameComponent,
     GratitudeComponent,
-    HomeSliderComponent
+    HomeSliderComponent,
+    SearchItemComponent,
+    BannerComponent
   ],
   imports: [
     CommonModule,
@@ -66,7 +70,9 @@ import { HomeSliderComponent } from './components/home-slider/home-slider.compon
     ContactComponent,
     NameComponent,
     GratitudeComponent,
-    HomeSliderComponent
+    HomeSliderComponent,
+    SearchItemComponent,
+    BannerComponent
   ],
 })
 export class SharedModule { }

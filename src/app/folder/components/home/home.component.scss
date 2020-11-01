@@ -1,3 +1,16 @@
 .segment-container{
     background: transparent! important;
 }
+.searchBar{
+    background-color: white;
+    z-index: 1;
+}
+.banner{
+    background-color: lightgreen;
+    color: darkgreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+}

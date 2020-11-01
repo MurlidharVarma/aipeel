@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, empty, Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Category } from './shared/models/category.model';
 import { Item } from './shared/models/item.model';
@@ -79,4 +79,20 @@ export class FireService {
     )
   }
 
+  getItems():Observable<Item[]>{
+    return this.items$;
+  }
+
+  getItemsBySearchText(searchTxt: string){
+    let search = (searchTxt && searchTxt!=null)? searchTxt.trim().toLowerCase(): null;
+    if(search && search !=null){
+      return this.items$.pipe(
+        map(data => {
+          return _.filter(data, (e: Item) => e.name.toLowerCase().indexOf(search) != -1);
+        })
+      )
+    }else{
+      return of(null);
+    }
+  }
 }

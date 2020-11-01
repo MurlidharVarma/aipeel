@@ -4,6 +4,9 @@ import { ItemList } from 'src/app/shared/models/item-listing.model';
 import { Item } from '../../../shared/models/item.model';
 import { AppService } from '../../../app.service';
 import { FireService } from 'src/app/fire.service';
+import { FormControl } from '@angular/forms';
+import * as _ from 'underscore';
+import { switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
@@ -16,29 +19,27 @@ export class HomeComponent implements OnInit {
   topProducts: ItemList;
   dealProducts: ItemList;
 
-  // constructor(private appService: FireService){
-  //   this.appService.getDealItems().subscribe((dealProducts:Item[]) => {
-  //     this.dealProducts = {
-  //       sectionName: "Deal of the Day",
-  //       items: dealProducts
-  //     };
-  //   });
+  itemSearchTxt: FormControl;
+  items: Item[];
+  originalItems: Item[];
 
-  //   this.appService.getPopularItems().subscribe((topProducts:Item[]) => {
-  //     this.topProducts = {
-  //       sectionName: "Top Products",
-  //       items: topProducts
-  //     }
-  //   });
-
-  //   this.appService.getAllCategories().subscribe(data => {
-  //     this.categoryList = {
-  //         sectionName: "Shop by Category",
-  //         categories: data
-  //       }
-  //   });
-  // }
   constructor(private appService: FireService) {
+    this.itemSearchTxt = new FormControl();
+
+    this.itemSearchTxt.valueChanges.pipe(
+      switchMap(txt => this.appService.getItemsBySearchText(txt))
+    ).subscribe((data: Item[]) => {
+      if(data && data!=null && data.length>0){
+        this.setItems(data)
+      }else{
+        this.setItems(null);
+      }
+    });
+    
+    this.appService.getItems().subscribe((data: Item[])=>{
+      this.originalItems = data;
+    })
+
     this.appService.getDealItems().subscribe((dealProducts:Item[]) => {
       this.dealProducts = {
         sectionName: "Hot Deals",
@@ -63,6 +64,12 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
+  }
+
+  setItems(itms: Item[]){
+    setTimeout(()=>{
+      this.items = itms;
+    })
   }
 
 }
